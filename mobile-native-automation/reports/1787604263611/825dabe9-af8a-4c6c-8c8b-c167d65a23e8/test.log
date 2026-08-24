@@ -1,0 +1,9 @@
+[2026-08-24 08:44:24] [3] [WARN] Reporting disabled: using no op test run registrar
+[2026-08-24 08:44:24] [3] [INFO] TEST [Surefire test - validLoginTest] STARTED at [22:44:24 2026-08-24]
+[2026-08-24 08:44:24] [3] [INFO] Starting driver session...
+[2026-08-24 08:44:24] [3] [ERROR] Failed to attach artifact reference 'app' to test run because it has not been started yet.
+[2026-08-24 08:44:28] [3] [INFO] Driver session started.
+[2026-08-24 08:44:33] [3] [INFO] PASS: keys 'standard_user' are sent to element 'usernameField'.
+[2026-08-24 08:44:35] [3] [INFO] PASS: keys 'secret_sauce' are sent to element 'passwordField'.
+[2026-08-24 08:44:35] [3] [INFO] PASS: element 'loginButton' is clicked.
+[2026-08-24 08:44:36] [3] [INFO] TEST [Surefire test - validLoginTest] PASSED at [22:44:36 2026-08-24]
