@@ -1,3 +1,4 @@
+com/solvd/carina/demo/RemoveFromCartTest.class
 com/solvd/carina/demo/WebLocalizationSample.class
 com/solvd/carina/demo/regression/dataprovider/DataproviderRetryTest2.class
 com/solvd/carina/demo/IOSPreferencesTest.class
@@ -18,10 +19,10 @@ com/solvd/carina/demo/PageOpeningStrategySampleTest.class
 com/solvd/carina/demo/regression/dataprovider/DataproviderRetryTest.class
 com/solvd/carina/demo/SoapSampleTest.class
 com/solvd/carina/demo/HelloWorld.class
+com/solvd/carina/demo/AddToCartTest.class
 com/solvd/carina/demo/DBSampleTest$1.class
 com/solvd/carina/demo/APISampleTest.class
 com/solvd/carina/demo/CustomDataProvidersSampleTest.class
-com/solvd/carina/demo/MobileSampleTest.class
 com/solvd/carina/demo/regression/attachfile/AttachFileTest.class
 com/solvd/carina/demo/regression/esg/ArtifactTest.class
 com/solvd/carina/demo/regression/dataprovider/DataproviderRetryTest1.class

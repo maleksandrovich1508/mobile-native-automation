@@ -7,8 +7,8 @@
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/regression/esg/ProxyTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/WebLocalizationSample.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/IOSSafariTest.java
-/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/MobileSampleTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/regression/dataprovider/DataproviderRetryTest1.java
+/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/RemoveFromCartTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/MobileDragAndDropTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/regression/esg/ArtifactTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/CustomDataProvidersSampleTest.java
@@ -24,6 +24,7 @@
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/AutoDownloadTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/APISampleTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/DBSampleTest.java
+/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/AddToCartTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/regression/esg/ClipboardTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/WebMultipleBrowserTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/AmazonS3Test.java

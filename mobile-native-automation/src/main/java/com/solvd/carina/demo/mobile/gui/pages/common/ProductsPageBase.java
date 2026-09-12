@@ -13,4 +13,6 @@ public abstract class ProductsPageBase extends AbstractPage {
     public abstract boolean isOpened();
 
     public abstract void addFirstProductToCart();
+
+    public abstract CartPageBase openCart();
 }

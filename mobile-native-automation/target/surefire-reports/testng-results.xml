@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-24T22:44:24 CEST" name="Surefire suite" finished-at="2026-08-24T22:44:36 CEST" duration-ms="11979">
+  <suite started-at="2026-09-12T11:13:24 CEST" name="Surefire suite" finished-at="2026-09-12T11:13:47 CEST" duration-ms="22673">
     <groups>
     </groups>
-    <test started-at="2026-08-24T22:44:24 CEST" name="Surefire test" finished-at="2026-08-24T22:44:36 CEST" duration-ms="11979">
-      <class name="com.solvd.carina.demo.LoginTest">
-        <test-method signature="validLoginTest()[pri:0, instance:com.solvd.carina.demo.LoginTest@73c1dda3]" started-at="2026-08-24T22:44:24 CEST" name="validLoginTest" finished-at="2026-08-24T22:44:36 CEST" duration-ms="11415" status="PASS">
+    <test started-at="2026-09-12T11:13:24 CEST" name="Surefire test" finished-at="2026-09-12T11:13:47 CEST" duration-ms="22673">
+      <class name="com.solvd.carina.demo.RemoveFromCartTest">
+        <test-method signature="removeProductFromCartTest()[pri:0, instance:com.solvd.carina.demo.RemoveFromCartTest@62eb918]" started-at="2026-09-12T11:13:24 CEST" name="removeProductFromCartTest" finished-at="2026-09-12T11:13:47 CEST" duration-ms="22162" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.carina.demo.LoginTest@73c1dda3]" started-at="2026-08-24T22:44:36 CEST" name="onCarinaAfterMethod" finished-at="2026-08-24T22:44:36 CEST" duration-ms="1" status="PASS">
+        </test-method> <!-- removeProductFromCartTest -->
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.carina.demo.RemoveFromCartTest@62eb918]" started-at="2026-09-12T11:13:47 CEST" name="onCarinaAfterMethod" finished-at="2026-09-12T11:13:47 CEST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onCarinaAfterMethod -->
-      </class> <!-- com.solvd.carina.demo.LoginTest -->
+      </class> <!-- com.solvd.carina.demo.RemoveFromCartTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

@@ -3,6 +3,7 @@ package com.solvd.carina.demo.mobile.gui.pages.android;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
+import com.solvd.carina.demo.mobile.gui.pages.common.CartPageBase;
 import com.solvd.carina.demo.mobile.gui.pages.common.ProductsPageBase;
 import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.utils.factory.DeviceType.Type;
@@ -19,6 +20,9 @@ public class ProductsPage extends ProductsPageBase {
     @FindBy(xpath = "(//android.widget.TextView[@text='ADD TO CART'])[1]")
     private ExtendedWebElement addToCartButton;
 
+    @FindBy(xpath = "//*[@content-desc='test-Cart']")
+    private ExtendedWebElement cartButton;
+
     public ProductsPage(WebDriver driver) {
         super(driver);
     }
@@ -31,5 +35,11 @@ public class ProductsPage extends ProductsPageBase {
     @Override
     public void addFirstProductToCart() {
         addToCartButton.click();
+    }
+
+    @Override
+    public CartPageBase openCart() {
+        cartButton.click();
+        return initPage(getDriver(), CartPageBase.class);
     }
 }
