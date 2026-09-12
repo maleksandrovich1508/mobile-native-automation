@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-12T11:44:10 CEST" name="Surefire suite" finished-at="2026-09-12T11:44:32 CEST" duration-ms="22422">
+  <suite started-at="2026-09-12T12:03:41 CEST" name="Surefire suite" finished-at="2026-09-12T12:03:57 CEST" duration-ms="15387">
     <groups>
     </groups>
-    <test started-at="2026-09-12T11:44:10 CEST" name="Surefire test" finished-at="2026-09-12T11:44:32 CEST" duration-ms="22422">
-      <class name="com.solvd.carina.demo.CheckoutTest">
-        <test-method signature="checkoutInformationTest()[pri:0, instance:com.solvd.carina.demo.CheckoutTest@31885b4b]" started-at="2026-09-12T11:44:10 CEST" name="checkoutInformationTest" finished-at="2026-09-12T11:44:32 CEST" duration-ms="21901" status="PASS">
+    <test started-at="2026-09-12T12:03:41 CEST" name="Surefire test" finished-at="2026-09-12T12:03:57 CEST" duration-ms="15387">
+      <class name="com.solvd.carina.demo.ContinueShoppingTest">
+        <test-method signature="continueShoppingTest()[pri:0, instance:com.solvd.carina.demo.ContinueShoppingTest@433db56d]" started-at="2026-09-12T12:03:41 CEST" name="continueShoppingTest" finished-at="2026-09-12T12:03:56 CEST" duration-ms="14964" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkoutInformationTest -->
-        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.carina.demo.CheckoutTest@31885b4b]" started-at="2026-09-12T11:44:32 CEST" name="onCarinaAfterMethod" finished-at="2026-09-12T11:44:32 CEST" duration-ms="1" status="PASS">
+        </test-method> <!-- continueShoppingTest -->
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.carina.demo.ContinueShoppingTest@433db56d]" started-at="2026-09-12T12:03:56 CEST" name="onCarinaAfterMethod" finished-at="2026-09-12T12:03:56 CEST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onCarinaAfterMethod -->
-      </class> <!-- com.solvd.carina.demo.CheckoutTest -->
+      </class> <!-- com.solvd.carina.demo.ContinueShoppingTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

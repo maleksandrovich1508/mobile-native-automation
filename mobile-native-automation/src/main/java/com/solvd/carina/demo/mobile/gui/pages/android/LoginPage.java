@@ -22,6 +22,9 @@ public class LoginPage extends LoginPageBase {
     @FindBy(xpath = "//*[@content-desc='test-LOGIN']")
     private ExtendedWebElement loginButton;
 
+    @FindBy(xpath = "//*[@content-desc='test-Error message']")
+    private ExtendedWebElement errorMessage;
+
     public LoginPage(WebDriver driver) {
         super(driver);
     }
@@ -46,5 +49,10 @@ public class LoginPage extends LoginPageBase {
         typeUsername(username);
         typePassword(password);
         clickLogin();
+    }
+
+    @Override
+    public boolean isErrorMessageDisplayed() {
+        return errorMessage.isElementPresent();
     }
 }

@@ -7,6 +7,7 @@
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/regression/esg/ProxyTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/WebLocalizationSample.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/IOSSafariTest.java
+/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/ContinueShoppingTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/regression/dataprovider/DataproviderRetryTest1.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/RemoveFromCartTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/MobileDragAndDropTest.java
@@ -29,4 +30,5 @@
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/regression/esg/ClipboardTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/WebMultipleBrowserTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/AmazonS3Test.java
+/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/NegativeLoginTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/regression/dataprovider/DataproviderRetryTest2.java

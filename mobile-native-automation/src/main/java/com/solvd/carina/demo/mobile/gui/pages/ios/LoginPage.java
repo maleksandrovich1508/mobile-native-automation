@@ -30,4 +30,9 @@ public class LoginPage extends LoginPageBase {
 	@Override
 	public void login(String username, String password) {
 	}
+
+	@Override
+	public boolean isErrorMessageDisplayed() {
+		return false;
+	}
 }

@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 import com.solvd.carina.demo.mobile.gui.pages.common.CartPageBase;
 import com.solvd.carina.demo.mobile.gui.pages.common.CheckoutPageBase;
+import com.solvd.carina.demo.mobile.gui.pages.common.ProductsPageBase;
 import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.utils.factory.DeviceType.Type;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
@@ -25,6 +26,9 @@ public class CartPage extends CartPageBase {
 
     @FindBy(xpath = "//*[@content-desc='test-CHECKOUT']")
     private ExtendedWebElement checkoutButton;
+
+    @FindBy(xpath = "//*[@content-desc='test-CONTINUE SHOPPING']")
+    private ExtendedWebElement continueShoppingButton;
 
     public CartPage(WebDriver driver) {
         super(driver);
@@ -49,6 +53,12 @@ public class CartPage extends CartPageBase {
     public boolean isCartEmpty() {
         productName.pause(2);
         return !productName.isElementPresent(3);
+    }
+
+    @Override
+    public ProductsPageBase clickContinueShopping() {
+        continueShoppingButton.click();
+        return initPage(getDriver(), ProductsPageBase.class);
     }
 
     @Override

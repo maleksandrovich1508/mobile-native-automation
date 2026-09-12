@@ -17,4 +17,6 @@ public abstract class LoginPageBase extends AbstractPage {
 	public abstract void clickLogin();
 
 	public abstract void login(String username, String password);
+
+	public abstract boolean isErrorMessageDisplayed();
 }
