@@ -28,6 +28,9 @@ public class CheckoutPage extends CheckoutPageBase {
     @FindBy(xpath = "//*[@content-desc='test-CONTINUE']")
     private ExtendedWebElement continueButton;
 
+    @FindBy(xpath = "//*[@content-desc='test-Error message']")
+    private ExtendedWebElement errorMessage;
+
     public CheckoutPage(WebDriver driver) {
         super(driver);
     }
@@ -55,6 +58,11 @@ public class CheckoutPage extends CheckoutPageBase {
     @Override
     public void clickContinue() {
         continueButton.click();
+    }
+
+    @Override
+    public boolean isErrorMessageDisplayed() {
+        return errorMessage.isElementPresent();
     }
 
     @Override

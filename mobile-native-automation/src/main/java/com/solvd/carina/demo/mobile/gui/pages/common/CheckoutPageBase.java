@@ -24,4 +24,6 @@ public abstract class CheckoutPageBase extends AbstractPage {
             String firstName,
             String lastName,
             String zipCode);
+
+    public abstract boolean isErrorMessageDisplayed();
 }
