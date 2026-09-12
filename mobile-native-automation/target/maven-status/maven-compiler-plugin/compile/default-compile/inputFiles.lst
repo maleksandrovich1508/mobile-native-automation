@@ -71,6 +71,7 @@
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/android/ContactUsPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/db/mappers/UserMapper.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/android/MapsPage.java
+/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/ios/ProductsPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/pages/desktop/WikipediaHomePage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/pages/ios/NewsPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/utils/ArtifactUtils.java

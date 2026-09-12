@@ -42,6 +42,7 @@ com/solvd/carina/demo/mobile/gui/pages/android/ChartsPage.class
 com/solvd/carina/demo/gui/pages/common/NewsPageBase.class
 com/solvd/carina/demo/gui/pages/desktop/WikipediaHomePage.class
 com/solvd/carina/demo/gui/pages/common/ModelInfoPageBase.class
+com/solvd/carina/demo/mobile/gui/pages/ios/ProductsPage.class
 com/solvd/carina/demo/gui/pages/common/HomePageBase.class
 com/solvd/carina/demo/utils/ConnectionFactory.class
 com/solvd/carina/demo/websocket/WebsocketClientEndpoint$MessageHandler.class

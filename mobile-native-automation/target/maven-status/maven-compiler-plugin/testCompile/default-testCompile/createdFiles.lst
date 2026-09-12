@@ -7,6 +7,7 @@ com/solvd/carina/demo/regression/esg/ProxyTest.class
 com/solvd/carina/demo/NegativeLoginTest.class
 com/solvd/carina/demo/LoginTest.class
 com/solvd/carina/demo/WebMultipleBrowserTest.class
+com/solvd/carina/demo/LogoutTest.class
 com/solvd/carina/demo/DBSampleTest.class
 com/solvd/carina/demo/MobileDragAndDropTest.class
 com/solvd/carina/demo/AutoDownloadTest.class

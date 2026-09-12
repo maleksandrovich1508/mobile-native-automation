@@ -15,4 +15,8 @@ public abstract class ProductsPageBase extends AbstractPage {
     public abstract void addFirstProductToCart();
 
     public abstract CartPageBase openCart();
+
+    public abstract void openMenu();
+
+    public abstract LoginPageBase logout();
 }
