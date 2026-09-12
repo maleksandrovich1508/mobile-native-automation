@@ -19,4 +19,6 @@ public abstract class ProductsPageBase extends AbstractPage {
     public abstract void openMenu();
 
     public abstract LoginPageBase logout();
+
+    public abstract void addBikeLightToCart();
 }

@@ -21,6 +21,9 @@ public class ProductsPage extends ProductsPageBase {
     @FindBy(xpath = "(//android.widget.TextView[@text='ADD TO CART'])[1]")
     private ExtendedWebElement addToCartButton;
 
+    @FindBy(xpath = "(//android.widget.TextView[@text='ADD TO CART'])[2]")
+    private ExtendedWebElement bikeLightAddToCartButton;
+
     @FindBy(xpath = "//*[@content-desc='test-Cart']")
     private ExtendedWebElement cartButton;
 
@@ -60,5 +63,10 @@ public class ProductsPage extends ProductsPageBase {
         openMenu();
         logoutButton.click();
         return initPage(getDriver(), LoginPageBase.class);
+    }
+
+    @Override
+    public void addBikeLightToCart() {
+        bikeLightAddToCartButton.click();
     }
 }

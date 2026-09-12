@@ -32,6 +32,10 @@ public class ProductsPage extends ProductsPageBase {
     }
 
     @Override
+    public void addBikeLightToCart() {
+    }
+
+    @Override
     public void openMenu() {
     }
 

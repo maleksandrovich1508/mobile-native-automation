@@ -21,4 +21,8 @@ public abstract class CartPageBase extends AbstractPage {
     public abstract CheckoutPageBase clickCheckout();
 
     public abstract ProductsPageBase clickContinueShopping();
+
+    public abstract boolean isBackpackDisplayed();
+
+    public abstract boolean isBikeLightDisplayed();
 }
