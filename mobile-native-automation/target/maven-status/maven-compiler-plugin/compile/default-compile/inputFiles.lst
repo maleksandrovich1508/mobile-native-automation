@@ -34,10 +34,12 @@
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/pages/desktop/HomePage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/soap/LookupCityMethod.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/components/WeValuePrivacyAd.java
+/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/common/CheckoutPageBase.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/common/ProductsPageBase.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/websocket/WebsocketClientEndpoint.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/pages/android/HomePage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/ios/CarinaDescriptionPage.java
+/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/android/CheckoutPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/pages/desktop/BrandModelsPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/android/ProductsPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/websocket/EndpointUtils.java

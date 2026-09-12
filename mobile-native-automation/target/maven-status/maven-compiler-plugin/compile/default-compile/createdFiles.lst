@@ -1,3 +1,4 @@
+com/solvd/carina/demo/mobile/gui/pages/android/CheckoutPage.class
 com/solvd/carina/demo/gui/pages/ios/BrandModelsPage.class
 com/solvd/carina/demo/gui/pages/ios/AllBrandsPage.class
 com/solvd/carina/demo/gui/pages/android/ModelInfoPage.class
@@ -22,6 +23,7 @@ com/solvd/carina/demo/gui/pages/android/BrandModelsPage.class
 com/solvd/carina/demo/gui/components/ModelItem.class
 com/solvd/carina/demo/mobile/gui/pages/android/ContactUsPage.class
 com/solvd/carina/demo/mobile/gui/pages/common/WebViewPageBase.class
+com/solvd/carina/demo/mobile/gui/pages/common/CheckoutPageBase.class
 com/solvd/carina/demo/gui/pages/desktop/AttachFilePage.class
 com/solvd/carina/demo/db/models/User.class
 com/solvd/carina/demo/gui/pages/desktop/ModelInfoPage.class

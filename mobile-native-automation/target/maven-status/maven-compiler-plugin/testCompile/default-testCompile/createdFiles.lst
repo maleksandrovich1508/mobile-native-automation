@@ -31,3 +31,4 @@ com/solvd/carina/demo/WebSampleTest.class
 com/solvd/carina/demo/AmazonS3Test.class
 com/solvd/carina/demo/WebSampleSingleDriver.class
 com/solvd/carina/demo/DataProvidersSampleTest.class
+com/solvd/carina/demo/CheckoutTest.class
