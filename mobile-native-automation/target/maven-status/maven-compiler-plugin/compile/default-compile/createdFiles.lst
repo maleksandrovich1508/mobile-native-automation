@@ -23,6 +23,7 @@ com/solvd/carina/demo/gui/pages/android/BrandModelsPage.class
 com/solvd/carina/demo/gui/components/ModelItem.class
 com/solvd/carina/demo/mobile/gui/pages/android/ContactUsPage.class
 com/solvd/carina/demo/mobile/gui/pages/common/WebViewPageBase.class
+com/solvd/carina/demo/mobile/gui/pages/ios/CheckoutPage.class
 com/solvd/carina/demo/mobile/gui/pages/common/CheckoutPageBase.class
 com/solvd/carina/demo/gui/pages/desktop/AttachFilePage.class
 com/solvd/carina/demo/db/models/User.class
@@ -59,6 +60,7 @@ com/solvd/carina/demo/mobile/gui/pages/common/ChartsPageBase.class
 com/solvd/carina/demo/gui/pages/ios/NewsPage.class
 com/solvd/carina/demo/mobile/gui/pages/android/DragAndDropPage.class
 com/solvd/carina/demo/mobile/gui/pages/android/LoginPage.class
+com/solvd/carina/demo/mobile/gui/pages/android/CheckoutCompletePage.class
 com/solvd/carina/demo/gui/pages/desktop/WikipediaLocalePage.class
 com/solvd/carina/demo/db/mappers/UserMapper.class
 com/solvd/carina/demo/db/mappers/UserPreferenceMapper.class
@@ -76,6 +78,7 @@ com/solvd/carina/demo/db/models/User$Status.class
 com/solvd/carina/demo/gui/pages/common/CompareModelsPageBase.class
 com/solvd/carina/demo/mobile/gui/pages/android/ProductsPage.class
 com/solvd/carina/demo/mobile/gui/pages/ios/PreferencesPage.class
+com/solvd/carina/demo/mobile/gui/pages/common/CheckoutCompletePageBase.class
 com/solvd/carina/demo/db/models/UserPreference.class
 com/solvd/carina/demo/mobile/gui/pages/common/ProductsPageBase.class
 com/solvd/carina/demo/websocket/WebsocketClientEndpoint.class

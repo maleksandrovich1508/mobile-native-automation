@@ -33,6 +33,7 @@ com/solvd/carina/demo/IOSSafariTest.class
 com/solvd/carina/demo/WebSampleTest.class
 com/solvd/carina/demo/AmazonS3Test.class
 com/solvd/carina/demo/WebSampleSingleDriver.class
+com/solvd/carina/demo/CheckoutCompleteTest.class
 com/solvd/carina/demo/ContinueShoppingTest.class
 com/solvd/carina/demo/DataProvidersSampleTest.class
 com/solvd/carina/demo/CheckoutTest.class

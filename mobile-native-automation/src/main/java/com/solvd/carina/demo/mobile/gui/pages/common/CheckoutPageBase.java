@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 
 import com.zebrunner.carina.webdriver.gui.AbstractPage;
 
+import com.solvd.carina.demo.mobile.gui.pages.common.CheckoutCompletePageBase;
+
 public abstract class CheckoutPageBase extends AbstractPage {
 
     public CheckoutPageBase(WebDriver driver) {
@@ -26,4 +28,6 @@ public abstract class CheckoutPageBase extends AbstractPage {
             String zipCode);
 
     public abstract boolean isErrorMessageDisplayed();
+
+    public abstract CheckoutCompletePageBase finishCheckout();
 }

@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-12T12:32:37 CEST" name="Surefire suite" finished-at="2026-09-12T12:32:54 CEST" duration-ms="17666">
+  <suite started-at="2026-09-12T13:02:38 CEST" name="Surefire suite" finished-at="2026-09-12T13:03:12 CEST" duration-ms="33992">
     <groups>
     </groups>
-    <test started-at="2026-09-12T12:32:37 CEST" name="Surefire test" finished-at="2026-09-12T12:32:54 CEST" duration-ms="17666">
-      <class name="com.solvd.carina.demo.LogoutTest">
-        <test-method signature="logoutTest()[pri:0, instance:com.solvd.carina.demo.LogoutTest@229d508c]" started-at="2026-09-12T12:32:37 CEST" name="logoutTest" finished-at="2026-09-12T12:32:54 CEST" duration-ms="17146" status="PASS">
+    <test started-at="2026-09-12T13:02:38 CEST" name="Surefire test" finished-at="2026-09-12T13:03:12 CEST" duration-ms="33992">
+      <class name="com.solvd.carina.demo.CheckoutCompleteTest">
+        <test-method signature="checkoutCompleteTest()[pri:0, instance:com.solvd.carina.demo.CheckoutCompleteTest@18301763]" started-at="2026-09-12T13:02:38 CEST" name="checkoutCompleteTest" finished-at="2026-09-12T13:03:12 CEST" duration-ms="33606" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logoutTest -->
-        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.carina.demo.LogoutTest@229d508c]" started-at="2026-09-12T12:32:54 CEST" name="onCarinaAfterMethod" finished-at="2026-09-12T12:32:54 CEST" duration-ms="2" status="PASS">
+        </test-method> <!-- checkoutCompleteTest -->
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.carina.demo.CheckoutCompleteTest@18301763]" started-at="2026-09-12T13:03:12 CEST" name="onCarinaAfterMethod" finished-at="2026-09-12T13:03:12 CEST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onCarinaAfterMethod -->
-      </class> <!-- com.solvd.carina.demo.LogoutTest -->
+      </class> <!-- com.solvd.carina.demo.CheckoutCompleteTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

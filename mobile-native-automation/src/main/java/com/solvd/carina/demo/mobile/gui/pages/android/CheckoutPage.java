@@ -7,6 +7,7 @@ import com.solvd.carina.demo.mobile.gui.pages.common.CheckoutPageBase;
 import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.utils.factory.DeviceType.Type;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
+import com.solvd.carina.demo.mobile.gui.pages.common.CheckoutCompletePageBase;
 
 @DeviceType(
         pageType = Type.ANDROID_PHONE,
@@ -30,6 +31,9 @@ public class CheckoutPage extends CheckoutPageBase {
 
     @FindBy(xpath = "//*[@content-desc='test-Error message']")
     private ExtendedWebElement errorMessage;
+
+    @FindBy(xpath = "//*[@text='FINISH']")
+    private ExtendedWebElement finishButton;
 
     public CheckoutPage(WebDriver driver) {
         super(driver);
@@ -58,6 +62,12 @@ public class CheckoutPage extends CheckoutPageBase {
     @Override
     public void clickContinue() {
         continueButton.click();
+    }
+
+    @Override
+    public CheckoutCompletePageBase finishCheckout() {
+        finishButton.click();
+        return initPage(getDriver(), CheckoutCompletePageBase.class);
     }
 
     @Override

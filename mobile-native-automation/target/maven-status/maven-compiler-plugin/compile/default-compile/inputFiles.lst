@@ -51,9 +51,11 @@
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/ios/LoginPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/pages/desktop/AllBrandsPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/db/models/User.java
+/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/ios/CheckoutPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/pages/ios/AllBrandsPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/common/CartPageBase.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/pages/common/BrandModelsPageBase.java
+/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/common/CheckoutCompletePageBase.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/components/footer/FooterMenu.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/pages/common/NewsPageBase.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/pages/desktop/WikipediaLocalePage.java
@@ -73,6 +75,7 @@
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/android/MapsPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/ios/ProductsPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/pages/desktop/WikipediaHomePage.java
+/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/android/CheckoutCompletePage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/pages/ios/NewsPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/utils/ArtifactUtils.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/android/CartPage.java
