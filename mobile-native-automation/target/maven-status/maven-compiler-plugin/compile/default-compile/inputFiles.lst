@@ -66,6 +66,7 @@
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/pages/android/NewsPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/ios/WelcomePage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/pages/desktop/CompareModelsPage.java
+/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/ios/DragAndDropPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/utils/MobileContextUtils.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/pages/desktop/ModelInfoPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/pages/desktop/NewsPage.java

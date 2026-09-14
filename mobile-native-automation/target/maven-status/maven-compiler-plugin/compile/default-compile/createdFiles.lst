@@ -25,6 +25,7 @@ com/solvd/carina/demo/mobile/gui/pages/android/ContactUsPage.class
 com/solvd/carina/demo/mobile/gui/pages/common/WebViewPageBase.class
 com/solvd/carina/demo/mobile/gui/pages/ios/CheckoutPage.class
 com/solvd/carina/demo/mobile/gui/pages/common/CheckoutPageBase.class
+com/solvd/carina/demo/mobile/gui/pages/ios/DragAndDropPage.class
 com/solvd/carina/demo/gui/pages/desktop/AttachFilePage.class
 com/solvd/carina/demo/db/models/User.class
 com/solvd/carina/demo/gui/pages/desktop/ModelInfoPage.class
