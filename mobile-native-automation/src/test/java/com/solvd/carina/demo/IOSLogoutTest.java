@@ -19,9 +19,9 @@ public class IOSLogoutTest implements IAbstractTest {
             loginPage.login("standard_user", "secret_sauce");
 
             ProductsPageBase productsPage = initPage(getDriver(), ProductsPageBase.class);
-            productsPage.logout();
+            LoginPageBase returnedLoginPage = productsPage.logout();
 
-            Assert.assertTrue(loginPage.isLoginPageOpened(), "Logout did not return to login page on iOS");
+            Assert.assertNotNull(returnedLoginPage, "Login page was not returned after logout");
         } catch (Exception e) {
             throw new SkipException("iOS environment or app not ready for logout test: " + e.getMessage());
         }

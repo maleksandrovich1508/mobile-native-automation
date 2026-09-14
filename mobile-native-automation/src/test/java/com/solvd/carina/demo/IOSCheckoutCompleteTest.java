@@ -25,8 +25,8 @@ public class IOSCheckoutCompleteTest implements IAbstractTest {
             productsPage.addFirstProductToCart();
 
             CartPageBase cartPage = productsPage.openCart();
-            CheckoutPageBase checkoutPage = cartPage.checkout();
-            CheckoutCompletePageBase completePage = checkoutPage.complete();
+            CheckoutPageBase checkoutPage = cartPage.clickCheckout();
+            CheckoutCompletePageBase completePage = checkoutPage.finishCheckout();
 
             Assert.assertTrue(completePage.isOpened(), "Checkout complete page is not opened on iOS");
         } catch (Exception e) {

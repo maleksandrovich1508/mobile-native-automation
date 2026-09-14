@@ -23,7 +23,7 @@ public class IOSRemoveFromCartTest implements IAbstractTest {
             productsPage.addFirstProductToCart();
 
             CartPageBase cartPage = productsPage.openCart();
-            cartPage.removeFirstProduct();
+            cartPage.removeProduct();
 
             Assert.assertFalse(cartPage.isProductDisplayed(), "Product still displayed in cart after remove on iOS");
         } catch (Exception e) {

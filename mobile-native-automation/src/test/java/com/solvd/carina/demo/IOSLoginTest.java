@@ -16,7 +16,8 @@ public class IOSLoginTest implements IAbstractTest {
         try {
             LoginPageBase loginPage = initPage(getDriver(), LoginPageBase.class);
             loginPage.login("standard_user", "secret_sauce");
-            Assert.assertTrue(loginPage.isLoggedIn(), "Login failed on iOS");
+            ProductsPageBase productsPage = initPage(getDriver(), ProductsPageBase.class);
+            Assert.assertTrue(productsPage.isOpened(), "Login did not reach products page on iOS");
         } catch (Exception e) {
             throw new SkipException("iOS environment or app not ready for login test: " + e.getMessage());
         }

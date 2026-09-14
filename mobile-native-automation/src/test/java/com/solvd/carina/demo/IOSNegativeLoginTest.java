@@ -16,7 +16,7 @@ public class IOSNegativeLoginTest implements IAbstractTest {
         try {
             LoginPageBase loginPage = initPage(getDriver(), LoginPageBase.class);
             loginPage.login("wrong_user", "wrong_password");
-            Assert.assertTrue(loginPage.isLoginErrorDisplayed(), "Expected login error not displayed on iOS");
+            Assert.assertTrue(loginPage.isErrorMessageDisplayed(), "Expected login error not displayed on iOS");
         } catch (Exception e) {
             throw new SkipException("iOS environment or app not ready for negative-login test: " + e.getMessage());
         }

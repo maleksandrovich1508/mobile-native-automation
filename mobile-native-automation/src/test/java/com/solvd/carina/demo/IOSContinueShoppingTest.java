@@ -23,7 +23,7 @@ public class IOSContinueShoppingTest implements IAbstractTest {
             productsPage.addFirstProductToCart();
 
             CartPageBase cartPage = productsPage.openCart();
-            productsPage = cartPage.continueShopping();
+            productsPage = cartPage.clickContinueShopping();
 
             Assert.assertTrue(productsPage.isOpened(), "Products page is not opened after continue shopping on iOS");
         } catch (Exception e) {

@@ -21,6 +21,15 @@
 		<classes>
 			<class name="com.solvd.carina.demo.IOSPreferencesTest" />
 			<class name="com.solvd.carina.demo.IOSDragAndDropTest" />
+			<class name="com.solvd.carina.demo.IOSAddToCartTest" />
+			<class name="com.solvd.carina.demo.IOSLoginTest" />
+			<class name="com.solvd.carina.demo.IOSLogoutTest" />
+			<class name="com.solvd.carina.demo.IOSCheckoutTest" />
+			<class name="com.solvd.carina.demo.IOSCheckoutCompleteTest" />
+			<class name="com.solvd.carina.demo.IOSContinueShoppingTest" />
+			<class name="com.solvd.carina.demo.IOSRemoveFromCartTest" />
+			<class name="com.solvd.carina.demo.IOSMultipleProductsTest" />
+			<class name="com.solvd.carina.demo.IOSNegativeLoginTest" />
 		</classes>
 	</test>
 
