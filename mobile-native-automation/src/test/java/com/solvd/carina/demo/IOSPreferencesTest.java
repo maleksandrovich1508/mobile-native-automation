@@ -2,8 +2,10 @@ package com.solvd.carina.demo;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
+import org.testng.SkipException;
 
 import com.zebrunner.carina.core.IAbstractTest;
+import com.zebrunner.carina.utils.R;
 import com.solvd.carina.demo.mobile.gui.pages.ios.PreferencesPage;
 import com.solvd.carina.demo.utils.MobileContextUtils;
 import com.zebrunner.carina.utils.mobile.IMobileUtils;
