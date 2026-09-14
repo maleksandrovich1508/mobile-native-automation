@@ -14,8 +14,7 @@ public class CheckoutTest implements IAbstractTest {
     @Test
     public void checkoutInformationTest() {
 
-        LoginPageBase loginPage =
-                initPage(getDriver(), LoginPageBase.class);
+        LoginPageBase loginPage = initPage(getDriver(), LoginPageBase.class);
 
         loginPage.login(
                 "standard_user",
