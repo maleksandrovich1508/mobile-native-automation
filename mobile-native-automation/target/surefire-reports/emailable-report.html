@@ -8,11 +8,485 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Carina Demo Tests - Mobile Drag And Drop Sample (Android)</th></tr>
-<tr><td><a href="#t0">Mobile drag and drop test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">36 411</td><td></td><td></td></tr>
+<tr><th colspan="8">Carina Demo Tests - Mobile Sample (iOS)</th></tr>
+<tr><td><a href="#t0">Mobile test</a></td><td class="num">0</td><td class="num attn">10</td><td class="num">0</td><td class="num attn">1</td><td class="num">11 935</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Carina Demo Tests - Mobile Drag And Drop Sample (Android)</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Mobile drag and drop test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.solvd.carina.demo.MobileDragAndDropTest</td><td><a href="#m0">testDragAndDrop</a></td><td rowspan="1">1789405915237</td><td rowspan="1">35557</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Carina Demo Tests - Mobile Sample (iOS)</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Mobile test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.solvd.carina.demo.IOSPreferencesTest</td><td><a href="#m0">nativePreferencesTest</a></td><td rowspan="1">1789407598317</td><td rowspan="1">9021</td></tr><tr><th colspan="4">Mobile test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.solvd.carina.demo.IOSAddToCartTest</td><td><a href="#m1">addProductToCartTestIOS</a></td><td rowspan="1">1789407609859</td><td rowspan="1">116</td></tr><tr class="skippedodd"><td rowspan="1">com.solvd.carina.demo.IOSCheckoutCompleteTest</td><td><a href="#m2">checkoutCompleteTestIOS</a></td><td rowspan="1">1789407610038</td><td rowspan="1">30</td></tr><tr class="skippedeven"><td rowspan="1">com.solvd.carina.demo.IOSCheckoutTest</td><td><a href="#m3">checkoutTestIOS</a></td><td rowspan="1">1789407610016</td><td rowspan="1">17</td></tr><tr class="skippedodd"><td rowspan="1">com.solvd.carina.demo.IOSContinueShoppingTest</td><td><a href="#m4">continueShoppingTestIOS</a></td><td rowspan="1">1789407610079</td><td rowspan="1">57</td></tr><tr class="skippedeven"><td rowspan="1">com.solvd.carina.demo.IOSDragAndDropTest</td><td><a href="#m5">testDragAndDropIOS</a></td><td rowspan="1">1789407609845</td><td rowspan="1">9</td></tr><tr class="skippedodd"><td rowspan="1">com.solvd.carina.demo.IOSLoginTest</td><td><a href="#m6">loginTestIOS</a></td><td rowspan="1">1789407609978</td><td rowspan="1">12</td></tr><tr class="skippedeven"><td rowspan="1">com.solvd.carina.demo.IOSLogoutTest</td><td><a href="#m7">logoutTestIOS</a></td><td rowspan="1">1789407609992</td><td rowspan="1">11</td></tr><tr class="skippedodd"><td rowspan="1">com.solvd.carina.demo.IOSMultipleProductsTest</td><td><a href="#m8">multipleProductsTestIOS</a></td><td rowspan="1">1789407610169</td><td rowspan="1">17</td></tr><tr class="skippedeven"><td rowspan="1">com.solvd.carina.demo.IOSNegativeLoginTest</td><td><a href="#m9">negativeLoginTestIOS</a></td><td rowspan="1">1789407610196</td><td rowspan="1">34</td></tr><tr class="skippedodd"><td rowspan="1">com.solvd.carina.demo.IOSRemoveFromCartTest</td><td><a href="#m10">removeFromCartTestIOS</a></td><td rowspan="1">1789407610140</td><td rowspan="1">24</td></tr></tbody>
 </table>
-<h2>Mobile drag and drop test</h2><h3 id="m0">com.solvd.carina.demo.MobileDragAndDropTest#testDragAndDrop</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Mobile test</h2><h3 id="m0">com.solvd.carina.demo.IOSPreferencesTest#nativePreferencesTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">TEST [Mobile test - nativePreferencesTest] FAILED at [19:40:08 2026-09-14] - Unable to resolve the launchable activity of 'com.apple.Preferences'. Original error: No activity found
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [8b95dbad-2706-461a-807e-5a03919b8f40, activateApp {bundleId=com.apple.Preferences}]
+Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/maksim/carina-automa..., appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, automationName: UiAutomator2, deviceName: Pixel_7, deviceType: phone, language: en, locale: US, platformName: android}, appium:deviceApiLevel: 37, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone16k_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceType: phone, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:language: en, appium:locale: US, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 17, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 8b95dbad-2706-461a-807e-5a03919b8f40
+
+java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:267)
+io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+io.appium.java_client.InteractsWithApps.activateApp(InteractsWithApps.java:140)
+io.appium.java_client.InteractsWithApps.activateApp(InteractsWithApps.java:124)
+com.solvd.carina.demo.IOSPreferencesTest.nativePreferencesTest(IOSPreferencesTest.java:19)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+java.base/java.lang.Thread.run(Thread.java:1516)</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Unable to resolve the launchable activity of &apos;com.apple.Preferences&apos;. Original error: No activity found
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [8b95dbad-2706-461a-807e-5a03919b8f40, activateApp {bundleId=com.apple.Preferences}]
+Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/maksim/carina-automa..., appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, automationName: UiAutomator2, deviceName: Pixel_7, deviceType: phone, language: en, locale: US, platformName: android}, appium:deviceApiLevel: 37, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone16k_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceType: phone, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:language: en, appium:locale: US, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 17, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 8b95dbad-2706-461a-807e-5a03919b8f40
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:267)
+	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+	at io.appium.java_client.InteractsWithApps.activateApp(InteractsWithApps.java:140)
+	at io.appium.java_client.InteractsWithApps.activateApp(InteractsWithApps.java:124)
+	at com.solvd.carina.demo.IOSPreferencesTest.nativePreferencesTest(IOSPreferencesTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.solvd.carina.demo.IOSAddToCartTest#addProductToCartTestIOS</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">TEST [Mobile test - addProductToCartTestIOS] SKIPPED at [19:40:09 2026-09-14] - iOS environment or app not ready for add-to-cart test: Could not start a new session. Response code 500. Message: Could not find a driver for automationName 'UiAutomator2' and platformName 'ios'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Driver 'uiautomator2' supports automationName 'UiAutomator2', but Appium could not find support for platformName 'ios'. Supported platformNames are: ["Android"]) 
+Host info: host: 'SMPLXJ90DXD4LG7', ip: '2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0'
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=UiAutomator2, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+
+com.solvd.carina.demo.IOSAddToCartTest.addProductToCartTestIOS(IOSAddToCartTest.java:30)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+java.base/java.lang.Thread.run(Thread.java:1516)</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: iOS environment or app not ready for add-to-cart test: Could not start a new session. Response code 500. Message: Could not find a driver for automationName &apos;UiAutomator2&apos; and platformName &apos;ios&apos;. Have you installed a driver that supports those capabilities? Run &apos;appium driver list --installed&apos; to see. (Lower-level error: Driver &apos;uiautomator2&apos; supports automationName &apos;UiAutomator2&apos;, but Appium could not find support for platformName &apos;ios&apos;. Supported platformNames are: [&quot;Android&quot;]) 
+Host info: host: &apos;SMPLXJ90DXD4LG7&apos;, ip: &apos;2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=UiAutomator2, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+	at com.solvd.carina.demo.IOSAddToCartTest.addProductToCartTestIOS(IOSAddToCartTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.solvd.carina.demo.IOSCheckoutCompleteTest#checkoutCompleteTestIOS</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">TEST [Mobile test - checkoutCompleteTestIOS] SKIPPED at [19:40:10 2026-09-14] - iOS environment or app not ready for checkout-complete test: Could not start a new session. Response code 500. Message: Could not find a driver for automationName 'UiAutomator2' and platformName 'ios'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Driver 'uiautomator2' supports automationName 'UiAutomator2', but Appium could not find support for platformName 'ios'. Supported platformNames are: ["Android"]) 
+Host info: host: 'SMPLXJ90DXD4LG7', ip: '2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0'
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=UiAutomator2, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+
+com.solvd.carina.demo.IOSCheckoutCompleteTest.checkoutCompleteTestIOS(IOSCheckoutCompleteTest.java:33)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+java.base/java.lang.Thread.run(Thread.java:1516)</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: iOS environment or app not ready for checkout-complete test: Could not start a new session. Response code 500. Message: Could not find a driver for automationName &apos;UiAutomator2&apos; and platformName &apos;ios&apos;. Have you installed a driver that supports those capabilities? Run &apos;appium driver list --installed&apos; to see. (Lower-level error: Driver &apos;uiautomator2&apos; supports automationName &apos;UiAutomator2&apos;, but Appium could not find support for platformName &apos;ios&apos;. Supported platformNames are: [&quot;Android&quot;]) 
+Host info: host: &apos;SMPLXJ90DXD4LG7&apos;, ip: &apos;2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=UiAutomator2, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+	at com.solvd.carina.demo.IOSCheckoutCompleteTest.checkoutCompleteTestIOS(IOSCheckoutCompleteTest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.solvd.carina.demo.IOSCheckoutTest#checkoutTestIOS</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">TEST [Mobile test - checkoutTestIOS] SKIPPED at [19:40:10 2026-09-14] - iOS environment or app not ready for checkout test: Could not start a new session. Response code 500. Message: Could not find a driver for automationName 'UiAutomator2' and platformName 'ios'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Driver 'uiautomator2' supports automationName 'UiAutomator2', but Appium could not find support for platformName 'ios'. Supported platformNames are: ["Android"]) 
+Host info: host: 'SMPLXJ90DXD4LG7', ip: '2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0'
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=UiAutomator2, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+
+com.solvd.carina.demo.IOSCheckoutTest.checkoutTestIOS(IOSCheckoutTest.java:31)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+java.base/java.lang.Thread.run(Thread.java:1516)</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: iOS environment or app not ready for checkout test: Could not start a new session. Response code 500. Message: Could not find a driver for automationName &apos;UiAutomator2&apos; and platformName &apos;ios&apos;. Have you installed a driver that supports those capabilities? Run &apos;appium driver list --installed&apos; to see. (Lower-level error: Driver &apos;uiautomator2&apos; supports automationName &apos;UiAutomator2&apos;, but Appium could not find support for platformName &apos;ios&apos;. Supported platformNames are: [&quot;Android&quot;]) 
+Host info: host: &apos;SMPLXJ90DXD4LG7&apos;, ip: &apos;2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=UiAutomator2, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+	at com.solvd.carina.demo.IOSCheckoutTest.checkoutTestIOS(IOSCheckoutTest.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.solvd.carina.demo.IOSContinueShoppingTest#continueShoppingTestIOS</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">TEST [Mobile test - continueShoppingTestIOS] SKIPPED at [19:40:10 2026-09-14] - iOS environment or app not ready for continue-shopping test: Could not start a new session. Response code 500. Message: Could not find a driver for automationName 'UiAutomator2' and platformName 'ios'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Driver 'uiautomator2' supports automationName 'UiAutomator2', but Appium could not find support for platformName 'ios'. Supported platformNames are: ["Android"]) 
+Host info: host: 'SMPLXJ90DXD4LG7', ip: '2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0'
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=UiAutomator2, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+
+com.solvd.carina.demo.IOSContinueShoppingTest.continueShoppingTestIOS(IOSContinueShoppingTest.java:30)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+java.base/java.lang.Thread.run(Thread.java:1516)</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: iOS environment or app not ready for continue-shopping test: Could not start a new session. Response code 500. Message: Could not find a driver for automationName &apos;UiAutomator2&apos; and platformName &apos;ios&apos;. Have you installed a driver that supports those capabilities? Run &apos;appium driver list --installed&apos; to see. (Lower-level error: Driver &apos;uiautomator2&apos; supports automationName &apos;UiAutomator2&apos;, but Appium could not find support for platformName &apos;ios&apos;. Supported platformNames are: [&quot;Android&quot;]) 
+Host info: host: &apos;SMPLXJ90DXD4LG7&apos;, ip: &apos;2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=UiAutomator2, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+	at com.solvd.carina.demo.IOSContinueShoppingTest.continueShoppingTestIOS(IOSContinueShoppingTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.solvd.carina.demo.IOSDragAndDropTest#testDragAndDropIOS</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">TEST [Mobile test - testDragAndDropIOS] SKIPPED at [19:40:09 2026-09-14] - iOS DragAndDropPage is not implemented. Create com.solvd.carina.demo.mobile.gui.pages.ios.DragAndDropPage to enable this test.
+
+com.solvd.carina.demo.IOSDragAndDropTest.testDragAndDropIOS(IOSDragAndDropTest.java:27)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+java.base/java.lang.Thread.run(Thread.java:1516)</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: iOS DragAndDropPage is not implemented. Create com.solvd.carina.demo.mobile.gui.pages.ios.DragAndDropPage to enable this test.
+	at com.solvd.carina.demo.IOSDragAndDropTest.testDragAndDropIOS(IOSDragAndDropTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.solvd.carina.demo.IOSLoginTest#loginTestIOS</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">TEST [Mobile test - loginTestIOS] SKIPPED at [19:40:09 2026-09-14] - iOS environment or app not ready for login test: Could not start a new session. Response code 500. Message: Could not find a driver for automationName 'UiAutomator2' and platformName 'ios'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Driver 'uiautomator2' supports automationName 'UiAutomator2', but Appium could not find support for platformName 'ios'. Supported platformNames are: ["Android"]) 
+Host info: host: 'SMPLXJ90DXD4LG7', ip: '2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0'
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=UiAutomator2, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+
+com.solvd.carina.demo.IOSLoginTest.loginTestIOS(IOSLoginTest.java:23)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+java.base/java.lang.Thread.run(Thread.java:1516)</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: iOS environment or app not ready for login test: Could not start a new session. Response code 500. Message: Could not find a driver for automationName &apos;UiAutomator2&apos; and platformName &apos;ios&apos;. Have you installed a driver that supports those capabilities? Run &apos;appium driver list --installed&apos; to see. (Lower-level error: Driver &apos;uiautomator2&apos; supports automationName &apos;UiAutomator2&apos;, but Appium could not find support for platformName &apos;ios&apos;. Supported platformNames are: [&quot;Android&quot;]) 
+Host info: host: &apos;SMPLXJ90DXD4LG7&apos;, ip: &apos;2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=UiAutomator2, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+	at com.solvd.carina.demo.IOSLoginTest.loginTestIOS(IOSLoginTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.solvd.carina.demo.IOSLogoutTest#logoutTestIOS</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">TEST [Mobile test - logoutTestIOS] SKIPPED at [19:40:10 2026-09-14] - iOS environment or app not ready for logout test: Could not start a new session. Response code 500. Message: Could not find a driver for automationName 'UiAutomator2' and platformName 'ios'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Driver 'uiautomator2' supports automationName 'UiAutomator2', but Appium could not find support for platformName 'ios'. Supported platformNames are: ["Android"]) 
+Host info: host: 'SMPLXJ90DXD4LG7', ip: '2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0'
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=UiAutomator2, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+
+com.solvd.carina.demo.IOSLogoutTest.logoutTestIOS(IOSLogoutTest.java:26)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+java.base/java.lang.Thread.run(Thread.java:1516)</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: iOS environment or app not ready for logout test: Could not start a new session. Response code 500. Message: Could not find a driver for automationName &apos;UiAutomator2&apos; and platformName &apos;ios&apos;. Have you installed a driver that supports those capabilities? Run &apos;appium driver list --installed&apos; to see. (Lower-level error: Driver &apos;uiautomator2&apos; supports automationName &apos;UiAutomator2&apos;, but Appium could not find support for platformName &apos;ios&apos;. Supported platformNames are: [&quot;Android&quot;]) 
+Host info: host: &apos;SMPLXJ90DXD4LG7&apos;, ip: &apos;2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=UiAutomator2, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+	at com.solvd.carina.demo.IOSLogoutTest.logoutTestIOS(IOSLogoutTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.solvd.carina.demo.IOSMultipleProductsTest#multipleProductsTestIOS</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">TEST [Mobile test - multipleProductsTestIOS] SKIPPED at [19:40:10 2026-09-14] - iOS environment or app not ready for multiple-products test: Could not start a new session. Response code 500. Message: Could not find a driver for automationName 'UiAutomator2' and platformName 'ios'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Driver 'uiautomator2' supports automationName 'UiAutomator2', but Appium could not find support for platformName 'ios'. Supported platformNames are: ["Android"]) 
+Host info: host: 'SMPLXJ90DXD4LG7', ip: '2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0'
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=UiAutomator2, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+
+com.solvd.carina.demo.IOSMultipleProductsTest.multipleProductsTestIOS(IOSMultipleProductsTest.java:29)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+java.base/java.lang.Thread.run(Thread.java:1516)</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: iOS environment or app not ready for multiple-products test: Could not start a new session. Response code 500. Message: Could not find a driver for automationName &apos;UiAutomator2&apos; and platformName &apos;ios&apos;. Have you installed a driver that supports those capabilities? Run &apos;appium driver list --installed&apos; to see. (Lower-level error: Driver &apos;uiautomator2&apos; supports automationName &apos;UiAutomator2&apos;, but Appium could not find support for platformName &apos;ios&apos;. Supported platformNames are: [&quot;Android&quot;]) 
+Host info: host: &apos;SMPLXJ90DXD4LG7&apos;, ip: &apos;2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=UiAutomator2, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+	at com.solvd.carina.demo.IOSMultipleProductsTest.multipleProductsTestIOS(IOSMultipleProductsTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.solvd.carina.demo.IOSNegativeLoginTest#negativeLoginTestIOS</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">TEST [Mobile test - negativeLoginTestIOS] SKIPPED at [19:40:10 2026-09-14] - iOS environment or app not ready for negative-login test: Could not start a new session. Response code 500. Message: Could not find a driver for automationName 'UiAutomator2' and platformName 'ios'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Driver 'uiautomator2' supports automationName 'UiAutomator2', but Appium could not find support for platformName 'ios'. Supported platformNames are: ["Android"]) 
+Host info: host: 'SMPLXJ90DXD4LG7', ip: '2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0'
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=UiAutomator2, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+
+com.solvd.carina.demo.IOSNegativeLoginTest.negativeLoginTestIOS(IOSNegativeLoginTest.java:21)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+java.base/java.lang.Thread.run(Thread.java:1516)</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: iOS environment or app not ready for negative-login test: Could not start a new session. Response code 500. Message: Could not find a driver for automationName &apos;UiAutomator2&apos; and platformName &apos;ios&apos;. Have you installed a driver that supports those capabilities? Run &apos;appium driver list --installed&apos; to see. (Lower-level error: Driver &apos;uiautomator2&apos; supports automationName &apos;UiAutomator2&apos;, but Appium could not find support for platformName &apos;ios&apos;. Supported platformNames are: [&quot;Android&quot;]) 
+Host info: host: &apos;SMPLXJ90DXD4LG7&apos;, ip: &apos;2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=UiAutomator2, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+	at com.solvd.carina.demo.IOSNegativeLoginTest.negativeLoginTestIOS(IOSNegativeLoginTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.solvd.carina.demo.IOSRemoveFromCartTest#removeFromCartTestIOS</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">TEST [Mobile test - removeFromCartTestIOS] SKIPPED at [19:40:10 2026-09-14] - iOS environment or app not ready for remove-from-cart test: Could not start a new session. Response code 500. Message: Could not find a driver for automationName 'UiAutomator2' and platformName 'ios'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Driver 'uiautomator2' supports automationName 'UiAutomator2', but Appium could not find support for platformName 'ios'. Supported platformNames are: ["Android"]) 
+Host info: host: 'SMPLXJ90DXD4LG7', ip: '2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0'
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=UiAutomator2, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+
+com.solvd.carina.demo.IOSRemoveFromCartTest.removeFromCartTestIOS(IOSRemoveFromCartTest.java:30)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+java.base/java.lang.Thread.run(Thread.java:1516)</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: iOS environment or app not ready for remove-from-cart test: Could not start a new session. Response code 500. Message: Could not find a driver for automationName &apos;UiAutomator2&apos; and platformName &apos;ios&apos;. Have you installed a driver that supports those capabilities? Run &apos;appium driver list --installed&apos; to see. (Lower-level error: Driver &apos;uiautomator2&apos; supports automationName &apos;UiAutomator2&apos;, but Appium could not find support for platformName &apos;ios&apos;. Supported platformNames are: [&quot;Android&quot;]) 
+Host info: host: &apos;SMPLXJ90DXD4LG7&apos;, ip: &apos;2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=UiAutomator2, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+	at com.solvd.carina.demo.IOSRemoveFromCartTest.removeFromCartTestIOS(IOSRemoveFromCartTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -17,6 +17,12 @@ public class IOSCheckoutCompleteTest implements IAbstractTest {
     @Test
     public void checkoutCompleteTestIOS() {
         R.CONFIG.put("capabilities.platformName", "iOS", true);
+        R.CONFIG.put("capabilities.automationName", "XCUITest", true);
+        String _app = R.CONFIG.get("capabilities.app");
+        String _bundle = R.CONFIG.get("capabilities.bundleId");
+        if ((_app == null || _app.isEmpty()) && (_bundle == null || _bundle.isEmpty())) {
+            throw new SkipException("No iOS app or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS test.");
+        }
         try {
             LoginPageBase loginPage = initPage(getDriver(), LoginPageBase.class);
             loginPage.login("standard_user", "secret_sauce");

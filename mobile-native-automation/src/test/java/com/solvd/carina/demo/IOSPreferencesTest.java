@@ -14,6 +14,13 @@ public class IOSPreferencesTest implements IAbstractTest, IMobileUtils {
     
     @Test
     public void nativePreferencesTest() {
+        R.CONFIG.put("capabilities.platformName", "iOS", true);
+        R.CONFIG.put("capabilities.automationName", "XCUITest", true);
+        String _app = R.CONFIG.get("capabilities.app");
+        String _bundle = R.CONFIG.get("capabilities.bundleId");
+        if ((_app == null || _app.isEmpty()) && (_bundle == null || _bundle.isEmpty())) {
+            throw new SkipException("No iOS app or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS Preferences test.");
+        }
         WebDriver driver = getDriver();
         MobileContextUtils contextUtils = new MobileContextUtils();
         ((InteractsWithApps) contextUtils.getPureDriver(driver)).activateApp("com.apple.Preferences");

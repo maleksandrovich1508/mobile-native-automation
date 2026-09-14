@@ -13,6 +13,13 @@ public class IOSDragAndDropTest implements IAbstractTest {
     @Test()
     @MethodOwner(owner = "qpsdemo")
     public void testDragAndDropIOS() {
+        R.CONFIG.put("capabilities.platformName", "iOS", true);
+        R.CONFIG.put("capabilities.automationName", "XCUITest", true);
+        String _app = R.CONFIG.get("capabilities.app");
+        String _bundle = R.CONFIG.get("capabilities.bundleId");
+        if ((_app == null || _app.isEmpty()) && (_bundle == null || _bundle.isEmpty())) {
+            throw new SkipException("No iOS app or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS drag-and-drop test.");
+        }
         // prefer to reuse platform-specific page if exists
         try {
             Class<?> pageClass = Class.forName("com.solvd.carina.demo.mobile.gui.pages.ios.DragAndDropPage");
