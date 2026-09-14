@@ -10,6 +10,7 @@
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/IOSSafariTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/ContinueShoppingTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/regression/dataprovider/DataproviderRetryTest1.java
+/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/IOSDragAndDropTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/RemoveFromCartTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/MultipleProductsTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/MobileDragAndDropTest.java
@@ -19,6 +20,7 @@
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/regression/dataprovider/DataproviderRetryTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/CheckoutValidationTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/WebSampleTest.java
+/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/MobileImageTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/DataProvidersSampleTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/regression/attachfile/AttachFileTest.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/java/com/solvd/carina/demo/regression/esg/DevToolsTest.java

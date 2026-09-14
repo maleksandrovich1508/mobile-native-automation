@@ -9,88 +9,10 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Carina Demo Tests - Mobile Drag And Drop Sample (Android)</th></tr>
-<tr><td><a href="#t0">Mobile drag and drop test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">1 416</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Mobile drag and drop test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">36 411</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Carina Demo Tests - Mobile Drag And Drop Sample (Android)</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Mobile drag and drop test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.solvd.carina.demo.MobileDragAndDropTest</td><td><a href="#m0">testDragAndDrop</a></td><td rowspan="1">1789404510523</td><td rowspan="1">1357</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Carina Demo Tests - Mobile Drag And Drop Sample (Android)</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Mobile drag and drop test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.solvd.carina.demo.MobileDragAndDropTest</td><td><a href="#m0">testDragAndDrop</a></td><td rowspan="1">1789405915237</td><td rowspan="1">35557</td></tr></tbody>
 </table>
-<h2>Mobile drag and drop test</h2><h3 id="m0">com.solvd.carina.demo.MobileDragAndDropTest#testDragAndDrop</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">TEST [Mobile drag and drop test - testDragAndDrop] FAILED at [18:48:31 2026-09-14] - Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'SMPLXJ90DXD4LG7', ip: '2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0'
-
-org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
-org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
-io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:80)
-io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:88)
-io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:231)
-com.zebrunner.carina.webdriver.core.factory.impl.MobileFactory.create(MobileFactory.java:125)
-com.zebrunner.carina.webdriver.core.factory.DriverFactory.create(DriverFactory.java:87)
-com.zebrunner.carina.webdriver.IDriverPool.createDriver(IDriverPool.java:364)
-com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
-com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
-com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
-com.solvd.carina.demo.MobileDragAndDropTest.testDragAndDrop(MobileDragAndDropTest.java:23)
-java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-java.base/java.lang.reflect.Method.invoke(Method.java:565)
-org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-org.testng.TestRunner.privateRun(TestRunner.java:829)
-org.testng.TestRunner.run(TestRunner.java:602)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
-java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-java.base/java.lang.Thread.run(Thread.java:1516)</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: &apos;SMPLXJ90DXD4LG7&apos;, ip: &apos;2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0&apos;
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:231)
-	at com.zebrunner.carina.webdriver.core.factory.impl.MobileFactory.create(MobileFactory.java:125)
-	at com.zebrunner.carina.webdriver.core.factory.DriverFactory.create(DriverFactory.java:87)
-	at com.zebrunner.carina.webdriver.IDriverPool.createDriver(IDriverPool.java:364)
-	at com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
-	at com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
-	at com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
-	at com.solvd.carina.demo.MobileDragAndDropTest.testDragAndDrop(MobileDragAndDropTest.java:23)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-	at java.base/java.lang.Thread.run(Thread.java:1516)
-Caused by: org.openqa.selenium.WebDriverException: Connection refused
-Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$execute$4(AppiumCommandExecutor.java:274)
-	at java.base/java.util.Optional.orElseGet(Optional.java:368)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:273)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	... 32 more
-Caused by: java.net.ConnectException: Connection refused
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:642)
-	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:1043)
-	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	... 1 more
-... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Mobile drag and drop test</h2><h3 id="m0">com.solvd.carina.demo.MobileDragAndDropTest#testDragAndDrop</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

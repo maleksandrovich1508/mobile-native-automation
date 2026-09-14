@@ -7,6 +7,7 @@ com/solvd/carina/demo/regression/esg/ProxyTest.class
 com/solvd/carina/demo/NegativeLoginTest.class
 com/solvd/carina/demo/LoginTest.class
 com/solvd/carina/demo/WebMultipleBrowserTest.class
+com/solvd/carina/demo/MobileImageTest.class
 com/solvd/carina/demo/LogoutTest.class
 com/solvd/carina/demo/DBSampleTest.class
 com/solvd/carina/demo/MobileDragAndDropTest.class
@@ -20,6 +21,7 @@ com/solvd/carina/demo/ProxySampleTest.class
 com/solvd/carina/demo/PageOpeningStrategySampleTest.class
 com/solvd/carina/demo/regression/dataprovider/DataproviderRetryTest.class
 com/solvd/carina/demo/SoapSampleTest.class
+com/solvd/carina/demo/IOSDragAndDropTest.class
 com/solvd/carina/demo/HelloWorld.class
 com/solvd/carina/demo/AddToCartTest.class
 com/solvd/carina/demo/DBSampleTest$1.class

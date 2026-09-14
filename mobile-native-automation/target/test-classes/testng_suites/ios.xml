@@ -19,7 +19,8 @@
 
 	<test name="Mobile test">
 		<classes>
-			<class name="com.solvd.carina.demo.MobileSampleTest" />
+			<class name="com.solvd.carina.demo.IOSPreferencesTest" />
+			<class name="com.solvd.carina.demo.IOSDragAndDropTest" />
 		</classes>
 	</test>
 
