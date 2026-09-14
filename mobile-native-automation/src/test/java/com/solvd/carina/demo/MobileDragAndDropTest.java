@@ -32,7 +32,7 @@ public class MobileDragAndDropTest implements IAbstractTest {
             dragAndDropPage.dragRight();
             dragAndDropPage.dragDiagonal();
             Assert.assertTrue(dragAndDropPage.isDragAndDropMessagePresent(), "Should be provided pop up message after successful drag and drop");
-        } catch (NoSuchElementException | RuntimeException e) {
+        } catch (NoSuchElementException e) {
             // Fallback to Swag Labs flow: login -> add first product -> verify in cart
             LoginPageBase loginPage = initPage(getDriver(), LoginPageBase.class);
             loginPage.login("standard_user", "secret_sauce");
@@ -43,6 +43,9 @@ public class MobileDragAndDropTest implements IAbstractTest {
             CartPageBase cartPage = productsPage.openCart();
             Assert.assertTrue(cartPage.isOpened(), "Cart page is not opened (fallback flow)");
             Assert.assertTrue(cartPage.isProductDisplayed(), "Product is not displayed in cart (fallback flow)");
+        } catch (Exception e) {
+            // treat other unexpected exceptions as failure
+            throw new RuntimeException("Unexpected error during drag-and-drop test: " + e.getMessage(), e);
         }
     }
 
