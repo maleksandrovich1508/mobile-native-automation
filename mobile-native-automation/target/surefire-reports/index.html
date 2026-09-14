@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Carina_Demo_Tests___Mobile_Sample__iOS_" class="navigator-link">
-              <span class="suite-name border-skipped">Carina Demo Tests - Mobile Sample (iOS)</span>
+              <span class="suite-name border-failed">Carina Demo Tests - Mobile Sample (iOS)</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods,  11 skipped,  </span>
+                    <span class="method-stats">11 methods, 1 failed,  10 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Carina_Demo_Tests___Mobile_Sample__iOS_" class="hide-methods failed suite-Carina_Demo_Tests___Mobile_Sample__iOS_"> (hide)</a> <!-- hide-methods failed suite-Carina_Demo_Tests___Mobile_Sample__iOS_ -->
+                      <a href="#" panel-name="suite-Carina_Demo_Tests___Mobile_Sample__iOS_" class="show-methods failed suite-Carina_Demo_Tests___Mobile_Sample__iOS_"> (show)</a> <!-- show-methods failed suite-Carina_Demo_Tests___Mobile_Sample__iOS_ -->
+                    </span>
+                    <div class="method-list-content failed suite-Carina_Demo_Tests___Mobile_Sample__iOS_">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Carina_Demo_Tests___Mobile_Sample__iOS_" title="com.solvd.carina.demo.IOSPreferencesTest" class="method navigator-link" hash-for-method="nativePreferencesTest">nativePreferencesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Carina_Demo_Tests___Mobile_Sample__iOS_ -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -138,11 +152,6 @@
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Carina_Demo_Tests___Mobile_Sample__iOS_" title="com.solvd.carina.demo.IOSPreferencesTest" class="method navigator-link" hash-for-method="nativePreferencesTest">nativePreferencesTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Carina_Demo_Tests___Mobile_Sample__iOS_" title="com.solvd.carina.demo.IOSNegativeLoginTest" class="method navigator-link" hash-for-method="negativeLoginTestIOS">negativeLoginTestIOS</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -168,6 +177,53 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Carina_Demo_Tests___Mobile_Sample__iOS_" class="panel Carina_Demo_Tests___Mobile_Sample__iOS_">
+          <div class="suite-Carina_Demo_Tests___Mobile_Sample__iOS_-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.solvd.carina.demo.IOSPreferencesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="nativePreferencesTest">
+                  </a> <!-- nativePreferencesTest -->
+                  <span class="method-name">nativePreferencesTest</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create simulator with name &apos;appiumTest-B3EE9DB1-4CAD-421B-B7EF-E9EBC370D104-Pixel_7&apos;, device type id &apos;Pixel_7&apos;, with runtime ids &apos;com.apple.CoreSimulator.SimRuntime.iOS-26-5&apos; 
+Host info: host: &apos;SMPLXJ90DXD4LG7&apos;, ip: &apos;2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:bundleId=com.saucelabs.SwagLabsMobileApp, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=XCUITest, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: XCUITest, appium:bundleId: com.saucelabs.SwagLabsMobil..., appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
+	at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:220)
+	at com.zebrunner.carina.webdriver.core.factory.impl.MobileFactory.create(MobileFactory.java:130)
+	at com.zebrunner.carina.webdriver.core.factory.DriverFactory.create(DriverFactory.java:87)
+	at com.zebrunner.carina.webdriver.IDriverPool.createDriver(IDriverPool.java:364)
+	at com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
+	at com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
+	at com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
+	at com.solvd.carina.demo.IOSPreferencesTest.nativePreferencesTest(IOSPreferencesTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Carina_Demo_Tests___Mobile_Sample__iOS_-class-failed -->
           <div class="suite-Carina_Demo_Tests___Mobile_Sample__iOS_-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -179,8 +235,8 @@
                   <a name="testDragAndDropIOS">
                   </a> <!-- testDragAndDropIOS -->
                   <span class="method-name">testDragAndDropIOS</span>
-                  <div class="stack-trace">org.testng.SkipException: No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS drag-and-drop test.
-	at com.solvd.carina.demo.IOSDragAndDropTest.testDragAndDropIOS(IOSDragAndDropTest.java:22)
+                  <div class="stack-trace">org.testng.SkipException: iOS DragAndDropPage is not implemented. Create com.solvd.carina.demo.mobile.gui.pages.ios.DragAndDropPage to enable this test.
+	at com.solvd.carina.demo.IOSDragAndDropTest.testDragAndDropIOS(IOSDragAndDropTest.java:35)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
@@ -203,8 +259,14 @@
                   <a name="multipleProductsTestIOS">
                   </a> <!-- multipleProductsTestIOS -->
                   <span class="method-name">multipleProductsTestIOS</span>
-                  <div class="stack-trace">org.testng.SkipException: No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS test.
-	at com.solvd.carina.demo.IOSMultipleProductsTest.multipleProductsTestIOS(IOSMultipleProductsTest.java:23)
+                  <div class="stack-trace">org.testng.SkipException: iOS environment or app not ready for multiple-products test: Could not start a new session. Response code 500. Message: Could not create simulator with name &apos;appiumTest-2FF0F474-9280-4285-8FED-24C3EE67619C-Pixel_7&apos;, device type id &apos;Pixel_7&apos;, with runtime ids &apos;com.apple.CoreSimulator.SimRuntime.iOS-26-5&apos; 
+Host info: host: &apos;SMPLXJ90DXD4LG7&apos;, ip: &apos;2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:bundleId=com.saucelabs.SwagLabsMobileApp, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=XCUITest, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: XCUITest, appium:bundleId: com.saucelabs.SwagLabsMobil..., appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+	at com.solvd.carina.demo.IOSMultipleProductsTest.multipleProductsTestIOS(IOSMultipleProductsTest.java:36)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
@@ -227,8 +289,14 @@
                   <a name="addProductToCartTestIOS">
                   </a> <!-- addProductToCartTestIOS -->
                   <span class="method-name">addProductToCartTestIOS</span>
-                  <div class="stack-trace">org.testng.SkipException: No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS test.
-	at com.solvd.carina.demo.IOSAddToCartTest.addProductToCartTestIOS(IOSAddToCartTest.java:23)
+                  <div class="stack-trace">org.testng.SkipException: iOS environment or app not ready for add-to-cart test: Could not start a new session. Response code 500. Message: Could not create simulator with name &apos;appiumTest-57D76487-3DB7-45A1-AA1B-223C7C622B35-Pixel_7&apos;, device type id &apos;Pixel_7&apos;, with runtime ids &apos;com.apple.CoreSimulator.SimRuntime.iOS-26-5&apos; 
+Host info: host: &apos;SMPLXJ90DXD4LG7&apos;, ip: &apos;2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:bundleId=com.saucelabs.SwagLabsMobileApp, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=XCUITest, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: XCUITest, appium:bundleId: com.saucelabs.SwagLabsMobil..., appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+	at com.solvd.carina.demo.IOSAddToCartTest.addProductToCartTestIOS(IOSAddToCartTest.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
@@ -251,8 +319,14 @@
                   <a name="checkoutCompleteTestIOS">
                   </a> <!-- checkoutCompleteTestIOS -->
                   <span class="method-name">checkoutCompleteTestIOS</span>
-                  <div class="stack-trace">org.testng.SkipException: No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS test.
-	at com.solvd.carina.demo.IOSCheckoutCompleteTest.checkoutCompleteTestIOS(IOSCheckoutCompleteTest.java:25)
+                  <div class="stack-trace">org.testng.SkipException: iOS environment or app not ready for checkout-complete test: Could not start a new session. Response code 500. Message: Could not create simulator with name &apos;appiumTest-20003409-7E1C-4A3F-A204-0D2F5F110656-Pixel_7&apos;, device type id &apos;Pixel_7&apos;, with runtime ids &apos;com.apple.CoreSimulator.SimRuntime.iOS-26-5&apos; 
+Host info: host: &apos;SMPLXJ90DXD4LG7&apos;, ip: &apos;2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:bundleId=com.saucelabs.SwagLabsMobileApp, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=XCUITest, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: XCUITest, appium:bundleId: com.saucelabs.SwagLabsMobil..., appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+	at com.solvd.carina.demo.IOSCheckoutCompleteTest.checkoutCompleteTestIOS(IOSCheckoutCompleteTest.java:40)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
@@ -275,8 +349,14 @@
                   <a name="checkoutTestIOS">
                   </a> <!-- checkoutTestIOS -->
                   <span class="method-name">checkoutTestIOS</span>
-                  <div class="stack-trace">org.testng.SkipException: No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS test.
-	at com.solvd.carina.demo.IOSCheckoutTest.checkoutTestIOS(IOSCheckoutTest.java:24)
+                  <div class="stack-trace">org.testng.SkipException: iOS environment or app not ready for checkout test: Could not start a new session. Response code 500. Message: Could not create simulator with name &apos;appiumTest-E2415CCC-7B94-43DC-A235-1D607A4C8CB9-Pixel_7&apos;, device type id &apos;Pixel_7&apos;, with runtime ids &apos;com.apple.CoreSimulator.SimRuntime.iOS-26-5&apos; 
+Host info: host: &apos;SMPLXJ90DXD4LG7&apos;, ip: &apos;2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:bundleId=com.saucelabs.SwagLabsMobileApp, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=XCUITest, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: XCUITest, appium:bundleId: com.saucelabs.SwagLabsMobil..., appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+	at com.solvd.carina.demo.IOSCheckoutTest.checkoutTestIOS(IOSCheckoutTest.java:38)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
@@ -299,32 +379,14 @@
                   <a name="logoutTestIOS">
                   </a> <!-- logoutTestIOS -->
                   <span class="method-name">logoutTestIOS</span>
-                  <div class="stack-trace">org.testng.SkipException: No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS test.
-	at com.solvd.carina.demo.IOSLogoutTest.logoutTestIOS(IOSLogoutTest.java:22)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-	at java.base/java.lang.Thread.run(Thread.java:1516)
-... Removed 15 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Carina_Demo_Tests___Mobile_Sample__iOS_-class-skipped -->
-          <div class="suite-Carina_Demo_Tests___Mobile_Sample__iOS_-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.solvd.carina.demo.IOSPreferencesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="nativePreferencesTest">
-                  </a> <!-- nativePreferencesTest -->
-                  <span class="method-name">nativePreferencesTest</span>
-                  <div class="stack-trace">org.testng.SkipException: No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS Preferences test.
-	at com.solvd.carina.demo.IOSPreferencesTest.nativePreferencesTest(IOSPreferencesTest.java:25)
+                  <div class="stack-trace">org.testng.SkipException: iOS environment or app not ready for logout test: Could not start a new session. Response code 500. Message: Could not create simulator with name &apos;appiumTest-886A450E-748C-44F9-8B6D-0294F43A0047-Pixel_7&apos;, device type id &apos;Pixel_7&apos;, with runtime ids &apos;com.apple.CoreSimulator.SimRuntime.iOS-26-5&apos; 
+Host info: host: &apos;SMPLXJ90DXD4LG7&apos;, ip: &apos;2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:bundleId=com.saucelabs.SwagLabsMobileApp, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=XCUITest, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: XCUITest, appium:bundleId: com.saucelabs.SwagLabsMobil..., appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+	at com.solvd.carina.demo.IOSLogoutTest.logoutTestIOS(IOSLogoutTest.java:33)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
@@ -347,8 +409,14 @@
                   <a name="negativeLoginTestIOS">
                   </a> <!-- negativeLoginTestIOS -->
                   <span class="method-name">negativeLoginTestIOS</span>
-                  <div class="stack-trace">org.testng.SkipException: No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS test.
-	at com.solvd.carina.demo.IOSNegativeLoginTest.negativeLoginTestIOS(IOSNegativeLoginTest.java:21)
+                  <div class="stack-trace">org.testng.SkipException: iOS environment or app not ready for negative-login test: Could not start a new session. Response code 500. Message: Could not create simulator with name &apos;appiumTest-76A7B9A5-EA7C-41B4-BE1D-1856F7918EF4-Pixel_7&apos;, device type id &apos;Pixel_7&apos;, with runtime ids &apos;com.apple.CoreSimulator.SimRuntime.iOS-26-5&apos; 
+Host info: host: &apos;SMPLXJ90DXD4LG7&apos;, ip: &apos;2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:bundleId=com.saucelabs.SwagLabsMobileApp, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=XCUITest, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: XCUITest, appium:bundleId: com.saucelabs.SwagLabsMobil..., appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+	at com.solvd.carina.demo.IOSNegativeLoginTest.negativeLoginTestIOS(IOSNegativeLoginTest.java:28)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
@@ -371,8 +439,14 @@
                   <a name="continueShoppingTestIOS">
                   </a> <!-- continueShoppingTestIOS -->
                   <span class="method-name">continueShoppingTestIOS</span>
-                  <div class="stack-trace">org.testng.SkipException: No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS test.
-	at com.solvd.carina.demo.IOSContinueShoppingTest.continueShoppingTestIOS(IOSContinueShoppingTest.java:23)
+                  <div class="stack-trace">org.testng.SkipException: iOS environment or app not ready for continue-shopping test: Could not start a new session. Response code 500. Message: Could not create simulator with name &apos;appiumTest-065C63FA-AE39-470C-ABD0-6310D40421CC-Pixel_7&apos;, device type id &apos;Pixel_7&apos;, with runtime ids &apos;com.apple.CoreSimulator.SimRuntime.iOS-26-5&apos; 
+Host info: host: &apos;SMPLXJ90DXD4LG7&apos;, ip: &apos;2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:bundleId=com.saucelabs.SwagLabsMobileApp, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=XCUITest, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: XCUITest, appium:bundleId: com.saucelabs.SwagLabsMobil..., appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+	at com.solvd.carina.demo.IOSContinueShoppingTest.continueShoppingTestIOS(IOSContinueShoppingTest.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
@@ -395,8 +469,14 @@
                   <a name="loginTestIOS">
                   </a> <!-- loginTestIOS -->
                   <span class="method-name">loginTestIOS</span>
-                  <div class="stack-trace">org.testng.SkipException: No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS test.
-	at com.solvd.carina.demo.IOSLoginTest.loginTestIOS(IOSLoginTest.java:22)
+                  <div class="stack-trace">org.testng.SkipException: iOS environment or app not ready for login test: Could not start a new session. Response code 500. Message: Could not create simulator with name &apos;appiumTest-4D34C50B-9D48-4CF0-ADA3-55DD0661C1DA-Pixel_7&apos;, device type id &apos;Pixel_7&apos;, with runtime ids &apos;com.apple.CoreSimulator.SimRuntime.iOS-26-5&apos; 
+Host info: host: &apos;SMPLXJ90DXD4LG7&apos;, ip: &apos;2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:bundleId=com.saucelabs.SwagLabsMobileApp, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=XCUITest, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: XCUITest, appium:bundleId: com.saucelabs.SwagLabsMobil..., appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+	at com.solvd.carina.demo.IOSLoginTest.loginTestIOS(IOSLoginTest.java:30)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
@@ -419,8 +499,14 @@
                   <a name="removeFromCartTestIOS">
                   </a> <!-- removeFromCartTestIOS -->
                   <span class="method-name">removeFromCartTestIOS</span>
-                  <div class="stack-trace">org.testng.SkipException: No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS test.
-	at com.solvd.carina.demo.IOSRemoveFromCartTest.removeFromCartTestIOS(IOSRemoveFromCartTest.java:23)
+                  <div class="stack-trace">org.testng.SkipException: iOS environment or app not ready for remove-from-cart test: Could not start a new session. Response code 500. Message: Could not create simulator with name &apos;appiumTest-6EA5E4F0-07DD-477C-88F1-C0E6EF4688CD-Pixel_7&apos;, device type id &apos;Pixel_7&apos;, with runtime ids &apos;com.apple.CoreSimulator.SimRuntime.iOS-26-5&apos; 
+Host info: host: &apos;SMPLXJ90DXD4LG7&apos;, ip: &apos;2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0&apos;
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:bundleId=com.saucelabs.SwagLabsMobileApp, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=XCUITest, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: XCUITest, appium:bundleId: com.saucelabs.SwagLabsMobil..., appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+	at com.solvd.carina.demo.IOSRemoveFromCartTest.removeFromCartTestIOS(IOSRemoveFromCartTest.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
@@ -510,52 +596,52 @@ data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'nativePreferencesTest')
 data.setCell(0, 2, 'com.solvd.carina.demo.IOSPreferencesTest')
-data.setCell(0, 3, 16);
+data.setCell(0, 3, 1949);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testDragAndDropIOS')
-data.setCell(1, 2, 'com.solvd.carina.demo.IOSDragAndDropTest')
-data.setCell(1, 3, 3);
+data.setCell(1, 1, 'addProductToCartTestIOS')
+data.setCell(1, 2, 'com.solvd.carina.demo.IOSAddToCartTest')
+data.setCell(1, 3, 918);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addProductToCartTestIOS')
-data.setCell(2, 2, 'com.solvd.carina.demo.IOSAddToCartTest')
-data.setCell(2, 3, 2);
+data.setCell(2, 1, 'continueShoppingTestIOS')
+data.setCell(2, 2, 'com.solvd.carina.demo.IOSContinueShoppingTest')
+data.setCell(2, 3, 652);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'checkoutTestIOS')
-data.setCell(3, 2, 'com.solvd.carina.demo.IOSCheckoutTest')
-data.setCell(3, 3, 2);
+data.setCell(3, 1, 'negativeLoginTestIOS')
+data.setCell(3, 2, 'com.solvd.carina.demo.IOSNegativeLoginTest')
+data.setCell(3, 3, 636);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'continueShoppingTestIOS')
-data.setCell(4, 2, 'com.solvd.carina.demo.IOSContinueShoppingTest')
-data.setCell(4, 3, 2);
+data.setCell(4, 1, 'removeFromCartTestIOS')
+data.setCell(4, 2, 'com.solvd.carina.demo.IOSRemoveFromCartTest')
+data.setCell(4, 3, 633);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'multipleProductsTestIOS')
-data.setCell(5, 2, 'com.solvd.carina.demo.IOSMultipleProductsTest')
-data.setCell(5, 3, 2);
+data.setCell(5, 1, 'checkoutTestIOS')
+data.setCell(5, 2, 'com.solvd.carina.demo.IOSCheckoutTest')
+data.setCell(5, 3, 603);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'logoutTestIOS')
-data.setCell(6, 2, 'com.solvd.carina.demo.IOSLogoutTest')
-data.setCell(6, 3, 2);
+data.setCell(6, 1, 'loginTestIOS')
+data.setCell(6, 2, 'com.solvd.carina.demo.IOSLoginTest')
+data.setCell(6, 3, 585);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'checkoutCompleteTestIOS')
-data.setCell(7, 2, 'com.solvd.carina.demo.IOSCheckoutCompleteTest')
-data.setCell(7, 3, 2);
+data.setCell(7, 1, 'logoutTestIOS')
+data.setCell(7, 2, 'com.solvd.carina.demo.IOSLogoutTest')
+data.setCell(7, 3, 574);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'loginTestIOS')
-data.setCell(8, 2, 'com.solvd.carina.demo.IOSLoginTest')
-data.setCell(8, 3, 1);
+data.setCell(8, 1, 'checkoutCompleteTestIOS')
+data.setCell(8, 2, 'com.solvd.carina.demo.IOSCheckoutCompleteTest')
+data.setCell(8, 3, 563);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'removeFromCartTestIOS')
-data.setCell(9, 2, 'com.solvd.carina.demo.IOSRemoveFromCartTest')
-data.setCell(9, 3, 1);
+data.setCell(9, 1, 'multipleProductsTestIOS')
+data.setCell(9, 2, 'com.solvd.carina.demo.IOSMultipleProductsTest')
+data.setCell(9, 3, 562);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'negativeLoginTestIOS')
-data.setCell(10, 2, 'com.solvd.carina.demo.IOSNegativeLoginTest')
-data.setCell(10, 3, 1);
+data.setCell(10, 1, 'testDragAndDropIOS')
+data.setCell(10, 2, 'com.solvd.carina.demo.IOSDragAndDropTest')
+data.setCell(10, 3, 5);
 window.suiteTableData['Carina_Demo_Tests___Mobile_Sample__iOS_']= { tableData: data, tableDiv: 'times-div-Carina_Demo_Tests___Mobile_Sample__iOS_'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 84 ms</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Carina_Demo_Tests___Mobile_Sample__iOS_">
               </div> <!-- times-div-Carina_Demo_Tests___Mobile_Sample__iOS_ -->
             </div> <!-- times-div -->
@@ -567,39 +653,36 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">addProductToCartTestIOS</span>
+              <span class="reporter-method-name">nativePreferencesTest</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">TEST [Mobile test - addProductToCartTestIOS] SKIPPED at [19:51:30 2026-09-14] - No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS test.
+                <span class="reporter-method-output">TEST [Mobile test - nativePreferencesTest] FAILED at [19:56:31 2026-09-14] - Could not start a new session. Response code 500. Message: Could not create simulator with name 'appiumTest-B3EE9DB1-4CAD-421B-B7EF-E9EBC370D104-Pixel_7', device type id 'Pixel_7', with runtime ids 'com.apple.CoreSimulator.SimRuntime.iOS-26-5' 
+Host info: host: 'SMPLXJ90DXD4LG7', ip: '2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0'
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:bundleId=com.saucelabs.SwagLabsMobileApp, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=XCUITest, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: XCUITest, appium:bundleId: com.saucelabs.SwagLabsMobil..., appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
 
-com.solvd.carina.demo.IOSAddToCartTest.addProductToCartTestIOS(IOSAddToCartTest.java:23)
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 java.base/java.lang.reflect.Method.invoke(Method.java:565)
-org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-org.testng.TestRunner.privateRun(TestRunner.java:829)
-org.testng.TestRunner.run(TestRunner.java:602)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
-java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-java.base/java.lang.Thread.run(Thread.java:1516)</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">checkoutTestIOS</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">TEST [Mobile test - checkoutTestIOS] SKIPPED at [19:51:30 2026-09-14] - No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS test.
-
-com.solvd.carina.demo.IOSCheckoutTest.checkoutTestIOS(IOSCheckoutTest.java:24)
+io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:80)
+io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:88)
+io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:220)
+com.zebrunner.carina.webdriver.core.factory.impl.MobileFactory.create(MobileFactory.java:130)
+com.zebrunner.carina.webdriver.core.factory.DriverFactory.create(DriverFactory.java:87)
+com.zebrunner.carina.webdriver.IDriverPool.createDriver(IDriverPool.java:364)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
+com.solvd.carina.demo.IOSPreferencesTest.nativePreferencesTest(IOSPreferencesTest.java:27)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 java.base/java.lang.reflect.Method.invoke(Method.java:565)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -625,37 +708,9 @@ java.base/java.lang.Thread.run(Thread.java:1516)</span>
             <div class="reporter-method-div">
               <span class="reporter-method-name">testDragAndDropIOS</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">TEST [Mobile test - testDragAndDropIOS] SKIPPED at [19:51:30 2026-09-14] - No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS drag-and-drop test.
+                <span class="reporter-method-output">TEST [Mobile test - testDragAndDropIOS] SKIPPED at [19:56:31 2026-09-14] - iOS DragAndDropPage is not implemented. Create com.solvd.carina.demo.mobile.gui.pages.ios.DragAndDropPage to enable this test.
 
-com.solvd.carina.demo.IOSDragAndDropTest.testDragAndDropIOS(IOSDragAndDropTest.java:22)
-java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-java.base/java.lang.reflect.Method.invoke(Method.java:565)
-org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-org.testng.TestRunner.privateRun(TestRunner.java:829)
-org.testng.TestRunner.run(TestRunner.java:602)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
-java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-java.base/java.lang.Thread.run(Thread.java:1516)</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">loginTestIOS</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">TEST [Mobile test - loginTestIOS] SKIPPED at [19:51:30 2026-09-14] - No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS test.
-
-com.solvd.carina.demo.IOSLoginTest.loginTestIOS(IOSLoginTest.java:22)
+com.solvd.carina.demo.IOSDragAndDropTest.testDragAndDropIOS(IOSDragAndDropTest.java:35)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 java.base/java.lang.reflect.Method.invoke(Method.java:565)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -681,9 +736,15 @@ java.base/java.lang.Thread.run(Thread.java:1516)</span>
             <div class="reporter-method-div">
               <span class="reporter-method-name">continueShoppingTestIOS</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">TEST [Mobile test - continueShoppingTestIOS] SKIPPED at [19:51:30 2026-09-14] - No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS test.
+                <span class="reporter-method-output">TEST [Mobile test - continueShoppingTestIOS] SKIPPED at [19:56:35 2026-09-14] - iOS environment or app not ready for continue-shopping test: Could not start a new session. Response code 500. Message: Could not create simulator with name 'appiumTest-065C63FA-AE39-470C-ABD0-6310D40421CC-Pixel_7', device type id 'Pixel_7', with runtime ids 'com.apple.CoreSimulator.SimRuntime.iOS-26-5' 
+Host info: host: 'SMPLXJ90DXD4LG7', ip: '2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0'
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:bundleId=com.saucelabs.SwagLabsMobileApp, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=XCUITest, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: XCUITest, appium:bundleId: com.saucelabs.SwagLabsMobil..., appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
 
-com.solvd.carina.demo.IOSContinueShoppingTest.continueShoppingTestIOS(IOSContinueShoppingTest.java:23)
+com.solvd.carina.demo.IOSContinueShoppingTest.continueShoppingTestIOS(IOSContinueShoppingTest.java:37)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 java.base/java.lang.reflect.Method.invoke(Method.java:565)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -707,11 +768,17 @@ java.base/java.lang.Thread.run(Thread.java:1516)</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">removeFromCartTestIOS</span>
+              <span class="reporter-method-name">loginTestIOS</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">TEST [Mobile test - removeFromCartTestIOS] SKIPPED at [19:51:30 2026-09-14] - No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS test.
+                <span class="reporter-method-output">TEST [Mobile test - loginTestIOS] SKIPPED at [19:56:33 2026-09-14] - iOS environment or app not ready for login test: Could not start a new session. Response code 500. Message: Could not create simulator with name 'appiumTest-4D34C50B-9D48-4CF0-ADA3-55DD0661C1DA-Pixel_7', device type id 'Pixel_7', with runtime ids 'com.apple.CoreSimulator.SimRuntime.iOS-26-5' 
+Host info: host: 'SMPLXJ90DXD4LG7', ip: '2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0'
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:bundleId=com.saucelabs.SwagLabsMobileApp, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=XCUITest, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: XCUITest, appium:bundleId: com.saucelabs.SwagLabsMobil..., appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
 
-com.solvd.carina.demo.IOSRemoveFromCartTest.removeFromCartTestIOS(IOSRemoveFromCartTest.java:23)
+com.solvd.carina.demo.IOSLoginTest.loginTestIOS(IOSLoginTest.java:30)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 java.base/java.lang.reflect.Method.invoke(Method.java:565)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -735,11 +802,17 @@ java.base/java.lang.Thread.run(Thread.java:1516)</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">multipleProductsTestIOS</span>
+              <span class="reporter-method-name">addProductToCartTestIOS</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">TEST [Mobile test - multipleProductsTestIOS] SKIPPED at [19:51:30 2026-09-14] - No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS test.
+                <span class="reporter-method-output">TEST [Mobile test - addProductToCartTestIOS] SKIPPED at [19:56:32 2026-09-14] - iOS environment or app not ready for add-to-cart test: Could not start a new session. Response code 500. Message: Could not create simulator with name 'appiumTest-57D76487-3DB7-45A1-AA1B-223C7C622B35-Pixel_7', device type id 'Pixel_7', with runtime ids 'com.apple.CoreSimulator.SimRuntime.iOS-26-5' 
+Host info: host: 'SMPLXJ90DXD4LG7', ip: '2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0'
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:bundleId=com.saucelabs.SwagLabsMobileApp, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=XCUITest, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: XCUITest, appium:bundleId: com.saucelabs.SwagLabsMobil..., appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
 
-com.solvd.carina.demo.IOSMultipleProductsTest.multipleProductsTestIOS(IOSMultipleProductsTest.java:23)
+com.solvd.carina.demo.IOSAddToCartTest.addProductToCartTestIOS(IOSAddToCartTest.java:37)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 java.base/java.lang.reflect.Method.invoke(Method.java:565)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -763,11 +836,17 @@ java.base/java.lang.Thread.run(Thread.java:1516)</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">nativePreferencesTest</span>
+              <span class="reporter-method-name">checkoutTestIOS</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">TEST [Mobile test - nativePreferencesTest] SKIPPED at [19:51:30 2026-09-14] - No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS Preferences test.
+                <span class="reporter-method-output">TEST [Mobile test - checkoutTestIOS] SKIPPED at [19:56:34 2026-09-14] - iOS environment or app not ready for checkout test: Could not start a new session. Response code 500. Message: Could not create simulator with name 'appiumTest-E2415CCC-7B94-43DC-A235-1D607A4C8CB9-Pixel_7', device type id 'Pixel_7', with runtime ids 'com.apple.CoreSimulator.SimRuntime.iOS-26-5' 
+Host info: host: 'SMPLXJ90DXD4LG7', ip: '2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0'
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:bundleId=com.saucelabs.SwagLabsMobileApp, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=XCUITest, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: XCUITest, appium:bundleId: com.saucelabs.SwagLabsMobil..., appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
 
-com.solvd.carina.demo.IOSPreferencesTest.nativePreferencesTest(IOSPreferencesTest.java:25)
+com.solvd.carina.demo.IOSCheckoutTest.checkoutTestIOS(IOSCheckoutTest.java:38)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 java.base/java.lang.reflect.Method.invoke(Method.java:565)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -793,37 +872,15 @@ java.base/java.lang.Thread.run(Thread.java:1516)</span>
             <div class="reporter-method-div">
               <span class="reporter-method-name">logoutTestIOS</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">TEST [Mobile test - logoutTestIOS] SKIPPED at [19:51:30 2026-09-14] - No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS test.
+                <span class="reporter-method-output">TEST [Mobile test - logoutTestIOS] SKIPPED at [19:56:33 2026-09-14] - iOS environment or app not ready for logout test: Could not start a new session. Response code 500. Message: Could not create simulator with name 'appiumTest-886A450E-748C-44F9-8B6D-0294F43A0047-Pixel_7', device type id 'Pixel_7', with runtime ids 'com.apple.CoreSimulator.SimRuntime.iOS-26-5' 
+Host info: host: 'SMPLXJ90DXD4LG7', ip: '2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0'
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:bundleId=com.saucelabs.SwagLabsMobileApp, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=XCUITest, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: XCUITest, appium:bundleId: com.saucelabs.SwagLabsMobil..., appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
 
-com.solvd.carina.demo.IOSLogoutTest.logoutTestIOS(IOSLogoutTest.java:22)
-java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-java.base/java.lang.reflect.Method.invoke(Method.java:565)
-org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-org.testng.TestRunner.privateRun(TestRunner.java:829)
-org.testng.TestRunner.run(TestRunner.java:602)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
-java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-java.base/java.lang.Thread.run(Thread.java:1516)</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">checkoutCompleteTestIOS</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">TEST [Mobile test - checkoutCompleteTestIOS] SKIPPED at [19:51:30 2026-09-14] - No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS test.
-
-com.solvd.carina.demo.IOSCheckoutCompleteTest.checkoutCompleteTestIOS(IOSCheckoutCompleteTest.java:25)
+com.solvd.carina.demo.IOSLogoutTest.logoutTestIOS(IOSLogoutTest.java:33)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 java.base/java.lang.reflect.Method.invoke(Method.java:565)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -849,9 +906,117 @@ java.base/java.lang.Thread.run(Thread.java:1516)</span>
             <div class="reporter-method-div">
               <span class="reporter-method-name">negativeLoginTestIOS</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">TEST [Mobile test - negativeLoginTestIOS] SKIPPED at [19:51:30 2026-09-14] - No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS test.
+                <span class="reporter-method-output">TEST [Mobile test - negativeLoginTestIOS] SKIPPED at [19:56:37 2026-09-14] - iOS environment or app not ready for negative-login test: Could not start a new session. Response code 500. Message: Could not create simulator with name 'appiumTest-76A7B9A5-EA7C-41B4-BE1D-1856F7918EF4-Pixel_7', device type id 'Pixel_7', with runtime ids 'com.apple.CoreSimulator.SimRuntime.iOS-26-5' 
+Host info: host: 'SMPLXJ90DXD4LG7', ip: '2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0'
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:bundleId=com.saucelabs.SwagLabsMobileApp, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=XCUITest, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: XCUITest, appium:bundleId: com.saucelabs.SwagLabsMobil..., appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
 
-com.solvd.carina.demo.IOSNegativeLoginTest.negativeLoginTestIOS(IOSNegativeLoginTest.java:21)
+com.solvd.carina.demo.IOSNegativeLoginTest.negativeLoginTestIOS(IOSNegativeLoginTest.java:28)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+java.base/java.lang.Thread.run(Thread.java:1516)</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">checkoutCompleteTestIOS</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TEST [Mobile test - checkoutCompleteTestIOS] SKIPPED at [19:56:34 2026-09-14] - iOS environment or app not ready for checkout-complete test: Could not start a new session. Response code 500. Message: Could not create simulator with name 'appiumTest-20003409-7E1C-4A3F-A204-0D2F5F110656-Pixel_7', device type id 'Pixel_7', with runtime ids 'com.apple.CoreSimulator.SimRuntime.iOS-26-5' 
+Host info: host: 'SMPLXJ90DXD4LG7', ip: '2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0'
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:bundleId=com.saucelabs.SwagLabsMobileApp, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=XCUITest, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: XCUITest, appium:bundleId: com.saucelabs.SwagLabsMobil..., appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+
+com.solvd.carina.demo.IOSCheckoutCompleteTest.checkoutCompleteTestIOS(IOSCheckoutCompleteTest.java:40)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+java.base/java.lang.Thread.run(Thread.java:1516)</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">multipleProductsTestIOS</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TEST [Mobile test - multipleProductsTestIOS] SKIPPED at [19:56:36 2026-09-14] - iOS environment or app not ready for multiple-products test: Could not start a new session. Response code 500. Message: Could not create simulator with name 'appiumTest-2FF0F474-9280-4285-8FED-24C3EE67619C-Pixel_7', device type id 'Pixel_7', with runtime ids 'com.apple.CoreSimulator.SimRuntime.iOS-26-5' 
+Host info: host: 'SMPLXJ90DXD4LG7', ip: '2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0'
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:bundleId=com.saucelabs.SwagLabsMobileApp, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=XCUITest, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: XCUITest, appium:bundleId: com.saucelabs.SwagLabsMobil..., appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+
+com.solvd.carina.demo.IOSMultipleProductsTest.multipleProductsTestIOS(IOSMultipleProductsTest.java:36)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+java.base/java.lang.Thread.run(Thread.java:1516)</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">removeFromCartTestIOS</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TEST [Mobile test - removeFromCartTestIOS] SKIPPED at [19:56:36 2026-09-14] - iOS environment or app not ready for remove-from-cart test: Could not start a new session. Response code 500. Message: Could not create simulator with name 'appiumTest-6EA5E4F0-07DD-477C-88F1-C0E6EF4688CD-Pixel_7', device type id 'Pixel_7', with runtime ids 'com.apple.CoreSimulator.SimRuntime.iOS-26-5' 
+Host info: host: 'SMPLXJ90DXD4LG7', ip: '2a02:a319:808b:6380:d1cc:75af:f960:e6c5%en0'
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:deviceType=phone, appium:locale=en_US, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:bundleId=com.saucelabs.SwagLabsMobileApp, appium:language=en, appium:deviceName=Pixel_7, platformName=IOS, appium:automationName=XCUITest, appium:app=/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: /Users/maksim/carina-automa..., appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: XCUITest, appium:bundleId: com.saucelabs.SwagLabsMobil..., appium:deviceName: Pixel_7, appium:deviceType: phone, appium:language: en, appium:locale: en_US, platformName: IOS}}]
+Capabilities {}
+
+com.solvd.carina.demo.IOSRemoveFromCartTest.removeFromCartTestIOS(IOSRemoveFromCartTest.java:37)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 java.base/java.lang.reflect.Method.invoke(Method.java:565)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -891,140 +1056,124 @@ java.base/java.lang.Thread.run(Thread.java:1516)</span>
             <div class="chronological-class">
               <div class="chronological-class-name">com.solvd.carina.demo.IOSPreferencesTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">nativePreferencesTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">onCarinaAfterMethod</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-start">1994 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.solvd.carina.demo.IOSDragAndDropTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testDragAndDropIOS</span>
-                <span class="method-start">32 ms</span>
+                <span class="method-start">1999 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">2005 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.solvd.carina.demo.IOSAddToCartTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">addProductToCartTestIOS</span>
-                <span class="method-start">37 ms</span>
+                <span class="method-start">2006 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.solvd.carina.demo.IOSDragAndDropTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">onCarinaAfterMethod</span>
-                <span class="method-start">37 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.solvd.carina.demo.IOSAddToCartTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">onCarinaAfterMethod</span>
-                <span class="method-start">40 ms</span>
+                <span class="method-start">2936 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.solvd.carina.demo.IOSLoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginTestIOS</span>
-                <span class="method-start">41 ms</span>
+                <span class="method-start">2937 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">onCarinaAfterMethod</span>
-                <span class="method-start">43 ms</span>
+                <span class="method-start">3524 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.solvd.carina.demo.IOSLogoutTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">logoutTestIOS</span>
-                <span class="method-start">44 ms</span>
+                <span class="method-start">3525 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">onCarinaAfterMethod</span>
-                <span class="method-start">47 ms</span>
+                <span class="method-start">4108 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.solvd.carina.demo.IOSCheckoutTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkoutTestIOS</span>
-                <span class="method-start">48 ms</span>
+                <span class="method-start">4109 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">onCarinaAfterMethod</span>
-                <span class="method-start">51 ms</span>
+                <span class="method-start">4715 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.solvd.carina.demo.IOSCheckoutCompleteTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkoutCompleteTestIOS</span>
-                <span class="method-start">52 ms</span>
+                <span class="method-start">4716 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">5281 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.solvd.carina.demo.IOSContinueShoppingTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">continueShoppingTestIOS</span>
-                <span class="method-start">55 ms</span>
+                <span class="method-start">5282 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.solvd.carina.demo.IOSCheckoutCompleteTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">onCarinaAfterMethod</span>
-                <span class="method-start">55 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.solvd.carina.demo.IOSContinueShoppingTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">onCarinaAfterMethod</span>
-                <span class="method-start">58 ms</span>
+                <span class="method-start">5941 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.solvd.carina.demo.IOSRemoveFromCartTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">removeFromCartTestIOS</span>
-                <span class="method-start">59 ms</span>
+                <span class="method-start">5942 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">6577 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.solvd.carina.demo.IOSMultipleProductsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">multipleProductsTestIOS</span>
-                <span class="method-start">62 ms</span>
+                <span class="method-start">6579 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.solvd.carina.demo.IOSRemoveFromCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">onCarinaAfterMethod</span>
-                <span class="method-start">62 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.solvd.carina.demo.IOSMultipleProductsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">onCarinaAfterMethod</span>
-                <span class="method-start">65 ms</span>
+                <span class="method-start">7144 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.solvd.carina.demo.IOSNegativeLoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">negativeLoginTestIOS</span>
-                <span class="method-start">65 ms</span>
+                <span class="method-start">7145 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">onCarinaAfterMethod</span>
-                <span class="method-start">67 ms</span>
+                <span class="method-start">7789 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
