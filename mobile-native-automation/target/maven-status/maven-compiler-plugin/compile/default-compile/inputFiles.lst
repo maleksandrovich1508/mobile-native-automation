@@ -6,6 +6,7 @@
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/api/GetUserMethods.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/ios/SaucePage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/api/PostUserMethod.java
+/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/ios/CartPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/android/DragAndDropPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/common/UIElementsPageBase.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/components/compare/ModelSpecs.java
@@ -13,6 +14,7 @@
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/db/mappers/UserPreferenceMapper.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/pages/android/ModelInfoPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/ios/PreferencesPage.java
+/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/mobile/gui/pages/ios/CheckoutCompletePage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/pages/ios/BrandModelsPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/pages/android/AllBrandsPage.java
 /Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/main/java/com/solvd/carina/demo/gui/components/NewsItem.java

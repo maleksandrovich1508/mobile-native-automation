@@ -38,22 +38,41 @@ public class CheckoutPage extends CheckoutPageBase {
     }
 
     @Override
-    public void typeFirstName(String text) {
-        firstNameField.type(text);
+    public void enterFirstName(String firstName) {
+        firstNameField.type(firstName);
     }
 
     @Override
-    public void typeLastName(String text) {
-        lastNameField.type(text);
+    public void enterLastName(String lastName) {
+        lastNameField.type(lastName);
     }
 
     @Override
-    public void typeZipCode(String text) {
-        zipField.type(text);
+    public void enterZipCode(String zipCode) {
+        zipField.type(zipCode);
     }
 
     @Override
     public void clickContinue() {
         continueBtn.click();
+    }
+
+    @Override
+    public void fillCheckoutInformation(String firstName, String lastName, String zipCode) {
+        enterFirstName(firstName);
+        enterLastName(lastName);
+        enterZipCode(zipCode);
+    }
+
+    @Override
+    public boolean isErrorMessageDisplayed() {
+        // sample app usually doesn't show error element for checkout; return false by default
+        return false;
+    }
+
+    @Override
+    public com.solvd.carina.demo.mobile.gui.pages.common.CheckoutCompletePageBase finishCheckout() {
+        clickContinue();
+        return initPage(getDriver(), com.solvd.carina.demo.mobile.gui.pages.common.CheckoutCompletePageBase.class);
     }
 }
