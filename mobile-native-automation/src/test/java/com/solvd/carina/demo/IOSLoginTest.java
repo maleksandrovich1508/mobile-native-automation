@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import com.zebrunner.carina.core.IAbstractTest;
 import com.zebrunner.carina.utils.R;
 import com.solvd.carina.demo.mobile.gui.pages.common.LoginPageBase;
+import com.solvd.carina.demo.mobile.gui.pages.common.ProductsPageBase;
 
 public class IOSLoginTest implements IAbstractTest {
 
