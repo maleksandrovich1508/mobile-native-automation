@@ -17,8 +17,9 @@ public class IOSDragAndDropTest implements IAbstractTest {
         R.CONFIG.put("capabilities.automationName", "XCUITest", true);
         String _app = R.CONFIG.get("capabilities.app");
         String _bundle = R.CONFIG.get("capabilities.bundleId");
-        if ((_app == null || _app.isEmpty()) && (_bundle == null || _bundle.isEmpty())) {
-            throw new SkipException("No iOS app or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS drag-and-drop test.");
+        boolean invalidApp = (_app == null || _app.isEmpty() || _app.toLowerCase().endsWith(".apk"));
+        if (invalidApp && (_bundle == null || _bundle.isEmpty())) {
+            throw new SkipException("No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS drag-and-drop test.");
         }
         // prefer to reuse platform-specific page if exists
         try {
