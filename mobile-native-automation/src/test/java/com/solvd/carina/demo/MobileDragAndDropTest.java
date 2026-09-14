@@ -18,7 +18,8 @@ public class MobileDragAndDropTest implements IAbstractTest {
         R.CONFIG.put("capabilities.app",
                 "/Users/maksim/carina-automation/mobile-native-automation/mobile-native-automation/src/test/resources/apps/Android-MyDemoAppRN.apk",
                 true);
-        R.CONFIG.put("capabilities.appActivity", ".view.DragAndDropDemo", true);
+        R.CONFIG.put("capabilities.appPackage", "com.swaglabsmobileapp", true);
+        R.CONFIG.put("capabilities.appActivity", "com.swaglabsmobileapp.SplashActivity", true);
 
         DragAndDropPage dragAndDropPage = new DragAndDropPage(getDriver());
         dragAndDropPage.dragDown();
