@@ -1,43 +1,69 @@
 package com.solvd.carina.demo;
 
 import org.testng.Assert;
-import org.testng.SkipException;
 import org.testng.annotations.Test;
 
-import com.zebrunner.carina.core.IAbstractTest;
-import com.zebrunner.carina.utils.R;
 import com.solvd.carina.demo.mobile.gui.pages.common.CartPageBase;
 import com.solvd.carina.demo.mobile.gui.pages.common.CheckoutCompletePageBase;
 import com.solvd.carina.demo.mobile.gui.pages.common.CheckoutPageBase;
 import com.solvd.carina.demo.mobile.gui.pages.common.LoginPageBase;
 import com.solvd.carina.demo.mobile.gui.pages.common.ProductsPageBase;
+import com.zebrunner.carina.core.IAbstractTest;
+import com.zebrunner.carina.utils.R;
 
 public class IOSCheckoutCompleteTest implements IAbstractTest {
 
     @Test
     public void checkoutCompleteTestIOS() {
+
+        // iOS capabilities
         R.CONFIG.put("capabilities.platformName", "iOS", true);
         R.CONFIG.put("capabilities.automationName", "XCUITest", true);
-        String _app = R.CONFIG.get("capabilities.app");
-        String _bundle = R.CONFIG.get("capabilities.bundleId");
-        boolean invalidApp = (_app == null || _app.isEmpty() || _app.toLowerCase().endsWith(".apk"));
-        if (invalidApp && (_bundle == null || _bundle.isEmpty())) {
-            throw new SkipException("No iOS app (.app/.ipa) or bundleId configured (capabilities.app or capabilities.bundleId). Skipping iOS test.");
-        }
-        try {
-            LoginPageBase loginPage = initPage(getDriver(), LoginPageBase.class);
-            loginPage.login("standard_user", "secret_sauce");
+        R.CONFIG.put("capabilities.deviceName", "iPhone 17", true);
 
-            ProductsPageBase productsPage = initPage(getDriver(), ProductsPageBase.class);
+        // iOS application
+        R.CONFIG.put(
+                "capabilities.app",
+                "/Users/maksim/Downloads/iOS.Simulator.SauceLabs.Mobile.Sample.app.2.7.1.app",
+                true);
+
+        // remove Android capabilities
+        R.CONFIG.put("capabilities.appPackage", "", true);
+        R.CONFIG.put("capabilities.appActivity", "", true);
+
+        try {
+
+            LoginPageBase loginPage =
+                    initPage(getDriver(), LoginPageBase.class);
+
+            loginPage.login(
+                    "standard_user",
+                    "secret_sauce");
+
+            ProductsPageBase productsPage =
+                    initPage(getDriver(), ProductsPageBase.class);
+
             productsPage.addFirstProductToCart();
 
-            CartPageBase cartPage = productsPage.openCart();
-            CheckoutPageBase checkoutPage = cartPage.clickCheckout();
-            CheckoutCompletePageBase completePage = checkoutPage.finishCheckout();
+            CartPageBase cartPage =
+                    productsPage.openCart();
 
-            Assert.assertTrue(completePage.isOpened(), "Checkout complete page is not opened on iOS");
+            CheckoutPageBase checkoutPage =
+                    cartPage.clickCheckout();
+
+            CheckoutCompletePageBase completePage =
+                    checkoutPage.finishCheckout();
+
+            Assert.assertTrue(
+                    completePage.isOpened(),
+                    "Checkout complete page is not opened on iOS");
+
         } catch (Exception e) {
-            throw new SkipException("iOS environment or app not ready for checkout-complete test: " + e.getMessage());
+
+            e.printStackTrace();
+
+            Assert.fail(
+                    "iOS test failed: " + e.getMessage());
         }
     }
 }

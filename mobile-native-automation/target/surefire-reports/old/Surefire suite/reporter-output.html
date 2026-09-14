@@ -1,22 +1,11 @@
-<h2>Reporter output</h2><table><tr><td>TEST [Surefire test - multipleProductsTest] FAILED at [17:52:04 2026-09-13] - no such element By.xpath: (//android.widget.TextView[@text='ADD TO CART'])[2]
+<h2>Reporter output</h2><table><tr><td>TEST [Surefire test - checkoutCompleteTestIOS] FAILED at [21:15:35 2026-09-14] - iOS test failed: no such element By.xpath: (//*[@name='ADD TO CART'])[1]
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.7.0', revision: '0a5b49d16f'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
 Driver info: driver.version: unknown
 
-com.zebrunner.carina.webdriver.locator.ExtendedElementLocator.findElement(ExtendedElementLocator.java:157)
-org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-jdk.proxy2/jdk.proxy2.$Proxy88.click(Unknown Source)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement$3.doClick(ExtendedWebElement.java:1537)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.executeAction(ExtendedWebElement.java:1397)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.overrideAction(ExtendedWebElement.java:1531)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1510)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1487)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:416)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:406)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:397)
-com.solvd.carina.demo.mobile.gui.pages.android.ProductsPage.addBikeLightToCart(ProductsPage.java:70)
-com.solvd.carina.demo.MultipleProductsTest.multipleProductsTest(MultipleProductsTest.java:27)
+org.testng.Assert.fail(Assert.java:110)
+com.solvd.carina.demo.IOSCheckoutCompleteTest.checkoutCompleteTestIOS(IOSCheckoutCompleteTest.java:65)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 java.base/java.lang.reflect.Method.invoke(Method.java:565)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)

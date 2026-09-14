@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Sep 13 17:51:45 CEST 2026</td>
+<td>Started on:</td><td>Mon Sep 14 21:14:14 CEST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>19 seconds (19868 ms)</td>
+<tr><td>Total time:</td><td>83 seconds (83136 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,30 +76,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.solvd.carina.demo.MultipleProductsTest.multipleProductsTest()'><b>multipleProductsTest</b><br>Test class: com.solvd.carina.demo.MultipleProductsTest<br/>
-<a href="#Output-982547576" onClick='toggleBox("Output-982547576", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.solvd.carina.demo.IOSCheckoutCompleteTest.checkoutCompleteTestIOS()'><b>checkoutCompleteTestIOS</b><br>Test class: com.solvd.carina.demo.IOSCheckoutCompleteTest<br/>
+<a href="#Output-1774500862" onClick='toggleBox("Output-1774500862", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-982547576" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-982547576">
-TEST [Surefire test - multipleProductsTest] FAILED at [17:52:04 2026-09-13] - no such element By.xpath: (//android.widget.TextView[@text='ADD TO CART'])[2]
+<a href="#Output-1774500862" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1774500862">
+TEST [Surefire test - checkoutCompleteTestIOS] FAILED at [21:15:35 2026-09-14] - iOS test failed: no such element By.xpath: (//*[@name='ADD TO CART'])[1]
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.7.0', revision: '0a5b49d16f'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5', java.version: '26.0.2'
 Driver info: driver.version: unknown
 
-com.zebrunner.carina.webdriver.locator.ExtendedElementLocator.findElement(ExtendedElementLocator.java:157)
-org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-jdk.proxy2/jdk.proxy2.$Proxy88.click(Unknown Source)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement$3.doClick(ExtendedWebElement.java:1537)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.executeAction(ExtendedWebElement.java:1397)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.overrideAction(ExtendedWebElement.java:1531)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1510)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1487)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:416)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:406)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:397)
-com.solvd.carina.demo.mobile.gui.pages.android.ProductsPage.addBikeLightToCart(ProductsPage.java:70)
-com.solvd.carina.demo.MultipleProductsTest.multipleProductsTest(MultipleProductsTest.java:27)
+org.testng.Assert.fail(Assert.java:110)
+com.solvd.carina.demo.IOSCheckoutCompleteTest.checkoutCompleteTestIOS(IOSCheckoutCompleteTest.java:65)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 java.base/java.lang.reflect.Method.invoke(Method.java:565)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -133,44 +122,21 @@ org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element By.xpath: (//android.widget.TextView[@text=&apos;ADD TO CART&apos;])[2]
+<td><div><pre>java.lang.AssertionError: iOS test failed: no such element By.xpath: (//*[@name=&apos;ADD TO CART&apos;])[1]
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
 Driver info: driver.version: unknown
-	at com.zebrunner.carina.webdriver.locator.ExtendedElementLocator.findElement(ExtendedElementLocator.java:157)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy88.click(Unknown Source)
-	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement$3.doClick(ExtendedWebElement.java:1537)
-	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.executeAction(ExtendedWebElement.java:1397)
-	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.overrideAction(ExtendedWebElement.java:1531)
-	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1510)
-	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1487)
-	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:416)
-	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:406)
-	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:397)
-	at com.solvd.carina.demo.mobile.gui.pages.android.ProductsPage.addBikeLightToCart(ProductsPage.java:70)
-	at com.solvd.carina.demo.MultipleProductsTest.multipleProductsTest(MultipleProductsTest.java:27)
+	at com.solvd.carina.demo.IOSCheckoutCompleteTest.checkoutCompleteTestIOS(IOSCheckoutCompleteTest.java:65)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace982547576", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace982547576'><pre>org.openqa.selenium.NoSuchElementException: no such element By.xpath: (//android.widget.TextView[@text=&apos;ADD TO CART&apos;])[2]
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1774500862", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1774500862'><pre>java.lang.AssertionError: iOS test failed: no such element By.xpath: (//*[@name=&apos;ADD TO CART&apos;])[1]
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.5&apos;, java.version: &apos;26.0.2&apos;
 Driver info: driver.version: unknown
-	at com.zebrunner.carina.webdriver.locator.ExtendedElementLocator.findElement(ExtendedElementLocator.java:157)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy88.click(Unknown Source)
-	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement$3.doClick(ExtendedWebElement.java:1537)
-	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.executeAction(ExtendedWebElement.java:1397)
-	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.overrideAction(ExtendedWebElement.java:1531)
-	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1510)
-	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1487)
-	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:416)
-	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:406)
-	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:397)
-	at com.solvd.carina.demo.mobile.gui.pages.android.ProductsPage.addBikeLightToCart(ProductsPage.java:70)
-	at com.solvd.carina.demo.MultipleProductsTest.multipleProductsTest(MultipleProductsTest.java:27)
+	at org.testng.Assert.fail(Assert.java:110)
+	at com.solvd.carina.demo.IOSCheckoutCompleteTest.checkoutCompleteTestIOS(IOSCheckoutCompleteTest.java:65)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -203,8 +169,8 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>17</td>
-<td>com.solvd.carina.demo.MultipleProductsTest@10c1682b</td></tr>
+<td>81</td>
+<td>com.solvd.carina.demo.IOSCheckoutCompleteTest@53b9952f</td></tr>
 </table><p>
 </body>
 </html>
